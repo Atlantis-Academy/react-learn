@@ -1,9 +1,15 @@
 import React from 'react'
+import styled from '@emotion/styled'
 
 
-const HeaderTitleSvg = () =>{
-  return(
-    <div className={'header-title-svg'}>
+const HeaderTitleSvgBlock = styled.div`
+    height: 50px;
+    display: flex;
+    align-items: center;`
+
+const HeaderTitleSvg = () => {
+  return (
+    <HeaderTitleSvgBlock>
       <svg
         width='42'
         height='12'
@@ -34,7 +40,7 @@ const HeaderTitleSvg = () =>{
           strokeLinecap='round'
         />
       </svg>
-    </div>
+    </HeaderTitleSvgBlock>
   )
 }
 export default HeaderTitleSvg

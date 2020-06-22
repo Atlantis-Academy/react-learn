@@ -1,13 +1,41 @@
 import React from 'react'
+import styled from '@emotion/styled'
 
+const HeaderFormBlock = styled.div`
+    width: 677px;
+    height: 672px;
+    background: radial-gradient(50.75% 50.75% at 50% 49.25%, #006D8D 0%, #0A4759 100%);
+    position: relative;
+    z-index: 2;`
+
+const HeaderFormStyle = styled.form`
+    width: 390px;
+    height: 500px;
+    left: 840px;
+    top: 190px;
+    background: #0F2B3D;
+    border-radius: 10px;
+    margin: 126px 146px 46px 141px;`
+
+const HeaderFormSvgBlock = styled.div`
+    position: absolute;
+    top: 70px;
+    left: 351px;
+    z-index: -1;`
+
+const HeaderFormSvgBlock2 = styled.div`
+    position: absolute;
+    top: 380px;
+    left: 70px;
+    z-index: -1;`
 
 const HeaderForm = () => {
   return (
-    <div className={'header-form'}>
-      <form action='#'>
+    <HeaderFormBlock>
+      <HeaderFormStyle action='#'>
 
-      </form>
-      <div className='header-form-svg'>
+      </HeaderFormStyle>
+      <HeaderFormSvgBlock>
         <svg
           width='285'
           height='276'
@@ -21,8 +49,8 @@ const HeaderForm = () => {
             strokeMiterlimit='10'
           />
         </svg>
-      </div>
-      <div className='header-form-svg2'>
+      </HeaderFormSvgBlock>
+      <HeaderFormSvgBlock2>
         <svg
           width='285'
           height='197'
@@ -36,8 +64,8 @@ const HeaderForm = () => {
             strokeMiterlimit='10'
           />
         </svg>
-      </div>
-    </div>
+      </HeaderFormSvgBlock2>
+    </HeaderFormBlock>
   )
 }
 

@@ -1,14 +1,18 @@
 import React from 'react'
 import HeaderTitle from './HeaderTitle'
 import HeaderForm from './HeaderForm'
+import styled from '@emotion/styled'
 
+const HeaderBlockSection = styled.div`
+    display: flex;
+    justify-content: space-between;`
 
 const HeaderBlock = () => {
   return (
-    <div className={'header-block'}>
+    <HeaderBlockSection>
       <HeaderTitle />
       <HeaderForm />
-    </div>
+    </HeaderBlockSection>
   )
 }
 
