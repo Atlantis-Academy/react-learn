@@ -1,21 +1,13 @@
 import React from 'react'
 import LogoSvg from './LogoSvg'
 import styled from '@emotion/styled'
+import DivMargin from '../../DivMargin'
 
-
-//использовал вместо margin div, придется плодить очень много divов
 const HeaderLogoBlock = styled.div`
-display: 'flex'`
-
-const headerMargin = {
-  width: '105px'
-}
-const headerMargin2 = {
-  width: '860px'
-}
+display: flex`
 
 const ButtonLogo = styled.button`
-    width: 202px;
+    width: 210px;
     height: 40px;
     padding: 10px 28px;
     border: 1px solid #FFFFFF;
@@ -26,10 +18,11 @@ const ButtonLogo = styled.button`
     font-family: 'Proxima Nova', serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.05em;
-    text-transform: uppercase;`
+    text-transform: uppercase;
+    cursor: pointer`
 
 //не пойму почему webstorm подчеркивает красным. В документации так и написано
 const Button = (props)=>{
@@ -42,14 +35,11 @@ const Button = (props)=>{
 const HeaderLogo = () => {
   return (
     <HeaderLogoBlock>
-      <div style={headerMargin}>
-      </div>
+      <DivMargin width='105px'/>
       <LogoSvg />
-      <div style={headerMargin2}>
-      </div>
-      <Button text = 'Оставить заявку'/>
-      <div style={headerMargin}>
-      </div>
+      <DivMargin width='860px'/>
+      <Button text = 'Задать вопрос'/>
+      <DivMargin width='105px'/>
     </HeaderLogoBlock>
   )
 }

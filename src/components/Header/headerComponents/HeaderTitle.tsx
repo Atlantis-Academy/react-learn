@@ -1,13 +1,15 @@
 import React from 'react'
 import HeaderTitleSvg from './HeaderTitleSvg'
 import styled from '@emotion/styled'
+import DivMargin from '../../DivMargin'
 
 const HeaderTitleBlock = styled.div`
-    max-width: 600px;
-    margin: 186px 0 0 105px;`
+    max-width: 600px;`
 
 const HeaderTitleH1 = styled.h1`
-    font-family: Blogger Sans;
+    @font-face {
+    font-family: 'Blogger Sans';
+    src: url('http://fonts.fontstorage.com/import/bloggersans.css');
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
@@ -36,6 +38,7 @@ const HeaderTitleP = styled.p`
 const HeaderTitle = () => {
   return (
     <HeaderTitleBlock>
+      <DivMargin height='186px'/>
       <HeaderTitleH1>
         Riverdoc
       </HeaderTitleH1>

@@ -15,18 +15,18 @@ const HeaderFormStyle = styled.form`
     top: 190px;
     background: #0F2B3D;
     border-radius: 10px;
-    margin: 126px 146px 46px 141px;`
+    margin: 126px 146px 46px 0;`
 
 const HeaderFormSvgBlock = styled.div`
     position: absolute;
     top: 70px;
-    left: 351px;
+    left: 240px;
     z-index: -1;`
 
 const HeaderFormSvgBlock2 = styled.div`
     position: absolute;
-    top: 380px;
-    left: 70px;
+    top: 363px;
+    left: -74px;
     z-index: -1;`
 
 const HeaderForm = () => {
