@@ -1,15 +1,15 @@
 import React from 'react';
-
+import HeaderSection from './Header/Header'
 import '../styles/index.css';
 
+
+
 class App extends React.PureComponent {
-  render() {
-    return (
-      <div>
-        <h1>Hello World!</h1>
-      </div>
-    );
-  }
+    render() {
+        return (
+          <HeaderSection />
+        );
+    }
 }
 
 export default App;

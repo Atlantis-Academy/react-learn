@@ -1,4 +1,7 @@
-h1 {
-  color: #292727;
-  text-align: center;
+@import "http://fonts.fontstorage.com/import/bloggersans.css";
+
+body {
+    margin: 0;
+    padding: 0;
 }
+
