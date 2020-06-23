@@ -1,7 +1,8 @@
 import React from 'react'
 import LogoSvg from './LogoSvg'
 import styled from '@emotion/styled'
-import DivMargin from '../../DivMargin'
+import DivMargin, { PropsType } from '../../DivMargin'
+import textComponent from '../../TextComponents'
 
 const HeaderLogoBlock = styled.div`
 display: flex`
@@ -24,8 +25,7 @@ const ButtonLogo = styled.button`
     text-transform: uppercase;
     cursor: pointer`
 
-//не пойму почему webstorm подчеркивает красным. В документации так и написано
-const Button = (props)=>{
+const Button = (props: PropsType)=>{
   return(
     <ButtonLogo>{props.text}
     </ButtonLogo>
@@ -38,7 +38,7 @@ const HeaderLogo = () => {
       <DivMargin width='105px'/>
       <LogoSvg />
       <DivMargin width='860px'/>
-      <Button text = 'Задать вопрос'/>
+      <Button text = {textComponent.buttonText[1]}/>
       <DivMargin width='105px'/>
     </HeaderLogoBlock>
   )

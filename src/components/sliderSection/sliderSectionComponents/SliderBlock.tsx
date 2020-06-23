@@ -1,6 +1,7 @@
 import DivMargin from '../../DivMargin'
 import React from 'react'
 import styled from '@emotion/styled'
+import textComponent from '../../TextComponents'
 
 
 const Slider = styled.div`
@@ -90,14 +91,11 @@ const SliderBlock = ()=>{
       <DivMargin width='30px' />
       <SliderTextBlock>
         <SliderText>
-          Автоматизация документооборота — не просто средство оптимизации внутренних процессов, это возможность
-          получить преимущество в условиях жесткой конкуренции. Системы автоматизированного документооборота помогают
-          ускорить процессы, дают руководителям цельную картину по работам компании для принятия как оперативных, так
-          и стратегических решений.
+          {textComponent.sliderBlock[0]}
         </SliderText>
         <DivMargin height='127px' />
         <Button>
-          Отправить заявку
+          {textComponent.buttonText[1]}
         </Button>
       </SliderTextBlock>
     </Slider>

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
+import textComponent from '../../TextComponents'
 
 
 const LeftTab = styled.div`
@@ -36,13 +37,13 @@ const Tabs = () => {
   return (
     <TabsBlock>
       <LeftTab>
-        Начинающим
+        {textComponent.tabsText[0]}
       </LeftTab>
       <CenterTab>
-        Малому бизнесу
+        {textComponent.tabsText[1]}
       </CenterTab>
       <RightTab>
-        Предприятиям
+        {textComponent.tabsText[2]}
       </RightTab>
     </TabsBlock>
   )

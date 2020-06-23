@@ -2,16 +2,14 @@ import React from 'react'
 import HeaderTitleSvg from './HeaderTitleSvg'
 import styled from '@emotion/styled'
 import DivMargin from '../../DivMargin'
+import textComponent from '../../TextComponents'
 
 const HeaderTitleBlock = styled.div`
     max-width: 600px;`
 
 const HeaderTitleH1 = styled.h1`
-    @font-face {
-    font-family: 'Blogger Sans';
-    src: url('http://fonts.fontstorage.com/import/bloggersans.css');
+    font-family: 'Patrick Hand SC';
     font-style: normal;
-    font-weight: bold;
     font-size: 64px;
     line-height: 70px;
     color: #3BB3C4;;
@@ -27,7 +25,7 @@ const HeaderTitleH2 = styled.h2`
     margin: 0;`
 
 const HeaderTitleP = styled.p`
-    font-family: Proxima Nova;
+    font-family: 'Proxima Nova';
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -38,20 +36,16 @@ const HeaderTitleP = styled.p`
 const HeaderTitle = () => {
   return (
     <HeaderTitleBlock>
-      <DivMargin height='186px'/>
+      <DivMargin height='186px' />
       <HeaderTitleH1>
-        Riverdoc
+        {textComponent.header.title[0]}
       </HeaderTitleH1>
       <HeaderTitleH2>
-        Система управления документами и задачами
+        {textComponent.header.title[1]}
       </HeaderTitleH2>
       <HeaderTitleSvg />
       <HeaderTitleP>
-        Представляет собой готовое решение для
-        автоматизации документооборота, делопроизводства
-        и управления
-        бизнес-процессами, включая контроль
-        исполнительской дисциплины
+        {textComponent.header.text[0]}
       </HeaderTitleP>
     </HeaderTitleBlock>
   )

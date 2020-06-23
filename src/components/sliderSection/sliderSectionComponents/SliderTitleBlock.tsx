@@ -3,6 +3,7 @@ import DivMargin from '../../DivMargin'
 import ArrowLeft from './ArrowLeft'
 import ArrowRight from './ArrowRight'
 import React from 'react'
+import textComponent from '../../TextComponents'
 
 
 
@@ -37,7 +38,7 @@ const SliderTitleBlockSection = ()=>{
       </ArrowRight>
       <DivMargin width='480px' />
       <SliderTitle>
-        Автоматизация документооборота
+        {textComponent.sliderTitleBlock[0]}
       </SliderTitle>
     </SliderTitleBlock>
   )

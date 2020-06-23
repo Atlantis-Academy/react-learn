@@ -1,6 +1,5 @@
 import styled from '@emotion/styled'
 import React from 'react'
-import { SvgWaveLittle } from './SvgWaveLittle'
 
 const Title = styled.h2`
 font-family: Blogger Sans;
@@ -14,7 +13,6 @@ width: 390px;`
 const TitleBlock = ()=>{
   return(
     <div>
-      <SvgWaveLittle/>
       <Title>
         Совместимость Riverdoc с другими системами
       </Title>

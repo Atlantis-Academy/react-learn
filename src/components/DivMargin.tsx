@@ -4,6 +4,7 @@ export interface PropsType {
   width?: string
   height?: string
   colors?: any
+  text?: string
 }
 
 const DivMargin = styled.div`
