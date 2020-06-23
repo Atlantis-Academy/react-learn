@@ -7,6 +7,7 @@ import textComponent from '../../TextComponents'
 const HeaderTitleBlock = styled.div`
     max-width: 600px;`
 
+
 const HeaderTitleH1 = styled.h1`
     font-family: 'Patrick Hand SC';
     font-style: normal;
