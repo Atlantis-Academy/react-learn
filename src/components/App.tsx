@@ -17,6 +17,9 @@ injectGlobal`
   * {
     box-sizing: border-box;
   }
+  button, input, textarea {
+        outline: none;
+}
   body{margin: 0}
   @font-face {
     font-family: 'Proxima Nova';

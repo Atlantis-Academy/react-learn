@@ -4,6 +4,7 @@ import theme from '../../ui/Theme'
 import { WaveBig } from '../../ui/svg/Wave'
 import { WaveBigBlock, WaveBigBlock2 } from '../../ui/WaveBlock'
 import { SvgStyle } from '../../ui/svg/SvgStyle'
+import Form from './Form'
 
 const HeaderFormBlock = styled.div`
     width: 677px;
@@ -12,20 +13,23 @@ const HeaderFormBlock = styled.div`
     position: relative;
     z-index: 2;`
 
-const HeaderFormStyle = styled.form`
+const HeaderFormStyle = styled.div`
     width: 390px;
     height: 500px;
     left: 840px;
     top: 190px;
     background: ${theme.colors.dark};
     border-radius: 10px;
-    margin: 126px 146px 46px 0;`
+    margin: 126px 146px 46px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;`
 
 const HeaderForm = () => {
   return (
     <HeaderFormBlock>
-      <HeaderFormStyle action='#'>
-
+      <HeaderFormStyle>
+          <Form/>
       </HeaderFormStyle>
       <WaveBigBlock>
         <SvgStyle width='285px' height='276px' fill='none'>

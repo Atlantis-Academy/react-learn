@@ -76,7 +76,7 @@ const SliderBlock = ()=>{
           </SliderText>
           <DivMargin height='25px' />
           <ButtonSlider>
-            {textComponent.buttonText[1]}
+            {textComponent.buttonText[0]}
           </ButtonSlider>
         </div>
     </Slider>
