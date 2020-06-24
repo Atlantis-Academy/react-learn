@@ -5,6 +5,8 @@ import { WaveBig } from '../../ui/svg/Wave'
 import { WaveBigBlock, WaveBigBlock2 } from '../../ui/WaveBlock'
 import { SvgStyle } from '../../ui/svg/SvgStyle'
 import Form from './Form'
+import { TitleH2 } from '../../ui/TextStyle'
+import textComponent from '../../TextComponents'
 
 const HeaderFormBlock = styled.div`
     width: 677px;
@@ -22,13 +24,22 @@ const HeaderFormStyle = styled.div`
     border-radius: 10px;
     margin: 126px 146px 46px 0;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;`
+
+const TitleForm = styled(TitleH2)`
+font-size: 28px;
+position: absolute;
+top: 132px;
+left: 30px;`
 
 const HeaderForm = () => {
   return (
     <HeaderFormBlock>
       <HeaderFormStyle>
+        <TitleForm>
+          {textComponent.header.title[2]}
+        </TitleForm>
           <Form/>
       </HeaderFormStyle>
       <WaveBigBlock>

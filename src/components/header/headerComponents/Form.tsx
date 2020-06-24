@@ -62,6 +62,7 @@ class Form extends React.Component<any, any> {
     return (
 
       <FormStyle>
+        <DivMargin height='60px' />
         <FieldSetForm>
           <Legend>Имя</Legend>
           <InputForm
@@ -71,7 +72,7 @@ class Form extends React.Component<any, any> {
             onChange={this.handleInputNameChange}
           />
         </FieldSetForm>
-        <DivMargin height='20px' />
+        <DivMargin height='8px' />
         <FieldSetForm>
           <Legend>Телефон</Legend>
           <InputForm
@@ -81,7 +82,7 @@ class Form extends React.Component<any, any> {
             onChange={this.handleInputPhoneChange}
           />
         </FieldSetForm>
-        <DivMargin height='20px' />
+        <DivMargin height='8px' />
         <FieldSetForm>
           <Legend>Email</Legend>
           <InputForm
@@ -91,7 +92,7 @@ class Form extends React.Component<any, any> {
             onChange={this.handleInputEmailChange}
           />
         </FieldSetForm>
-        <DivMargin height='20px' />
+        <DivMargin height='8px' />
         <FieldSetForm>
           <Legend>Организация</Legend>
           <InputForm
@@ -101,7 +102,7 @@ class Form extends React.Component<any, any> {
             onChange={this.handleInputJobChange}
           />
         </FieldSetForm>
-        <DivMargin height='20px' />
+        <DivMargin height='8px' />
         <ButtonForm onClick={this.handleButton}>{textComponent.buttonText[2]}</ButtonForm>
       </FormStyle>
 
