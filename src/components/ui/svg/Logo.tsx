@@ -1,12 +1,7 @@
 import React from 'react'
-import styled from '@emotion/styled'
-import theme, { PropsType } from '../Theme'
+import theme from '../Theme'
+import { SvgStyle } from './SvgStyle'
 
-
-export const SvgStyle = styled.svg`
-width: ${(props: PropsType) => props.width};
-height: ${(props: PropsType) => props.height};
-fill: ${(props: PropsType) => props.fill};`
 
 const Logo = () => {
   return (

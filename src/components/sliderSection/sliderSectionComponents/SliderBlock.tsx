@@ -7,6 +7,7 @@ import { TextStyle } from '../../ui/TextStyle'
 import Button from '../../ui/Button'
 import SliderSvg from '../../ui/svg/SliderSvg'
 import { WaveBig } from '../../ui/svg/Wave'
+import { SvgStyle } from '../../ui/svg/SvgStyle'
 
 
 const Slider = styled.div`
@@ -63,7 +64,9 @@ const SliderBlock = ()=>{
           <SliderSvg/>
         </ImgSvg>
         <Img2>
-          <WaveBig/>
+          <SvgStyle width='285px' height='118px' fill='none'>
+            {WaveBig[0]}
+          </SvgStyle>
         </Img2>
       </SliderImg>
       <DivMargin width='30px' />

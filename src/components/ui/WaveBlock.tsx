@@ -2,9 +2,6 @@ import styled from '@emotion/styled'
 
 
 const WaveBigBlock = styled.div`
-    width: 285px;
-    height: 276px;
-    object-fit: cover;
     position: absolute;
     top: 70px;
     left: 240px;

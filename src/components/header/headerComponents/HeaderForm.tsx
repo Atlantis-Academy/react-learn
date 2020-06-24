@@ -3,6 +3,7 @@ import styled from '@emotion/styled'
 import theme from '../../ui/Theme'
 import { WaveBig } from '../../ui/svg/Wave'
 import { WaveBigBlock, WaveBigBlock2 } from '../../ui/WaveBlock'
+import { SvgStyle } from '../../ui/svg/SvgStyle'
 
 const HeaderFormBlock = styled.div`
     width: 677px;
@@ -27,10 +28,14 @@ const HeaderForm = () => {
 
       </HeaderFormStyle>
       <WaveBigBlock>
-        <WaveBig/>
+        <SvgStyle width='285px' height='276px' fill='none'>
+          {WaveBig[0]}
+        </SvgStyle>
       </WaveBigBlock>
       <WaveBigBlock2>
-        <WaveBig/>
+        <SvgStyle width='285px' height='197px' fill='none'>
+          {WaveBig[0]}
+        </SvgStyle>
       </WaveBigBlock2>
     </HeaderFormBlock>
   )

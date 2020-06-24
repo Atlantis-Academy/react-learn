@@ -6,6 +6,7 @@ export interface PropsType {
   colors?: string
   text?: string
   fill?: string
+  stroke?: string
 }
 
 
