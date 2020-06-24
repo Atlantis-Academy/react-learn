@@ -18,6 +18,20 @@ injectGlobal`
     box-sizing: border-box;
   }
   body{margin: 0}
+  @font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova'),
+      local('ProximaNova-Regular'),
+      url('./src/fonts/ProximaNova-Regular.woff2')
+        format('woff2'); 
+  }
+  @font-face {
+  font-family: 'Blogger Sans';
+    src: local('Blogger Sans'),
+      local('BloggerSans-Bold'),
+      url('./src/fonts/BloggerSans-Bold.woff2')
+        format('woff2');
+  }
  `
 
 

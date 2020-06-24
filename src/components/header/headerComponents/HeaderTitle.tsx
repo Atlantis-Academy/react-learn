@@ -7,10 +7,10 @@ import textComponent from '../../TextComponents'
 const HeaderTitleBlock = styled.div`
     max-width: 600px;`
 
-
 const HeaderTitleH1 = styled.h1`
-    font-family: 'Patrick Hand SC';
+    font-family: Blogger Sans;
     font-style: normal;
+    font-weight: bold;
     font-size: 64px;
     line-height: 70px;
     color: #3BB3C4;;
@@ -26,9 +26,7 @@ const HeaderTitleH2 = styled.h2`
     margin: 0;`
 
 const HeaderTitleP = styled.p`
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: normal;
+    font-family: Proxima Nova;
     font-size: 22px;
     line-height: 30px;
     color: #FFFFFF;
