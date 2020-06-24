@@ -1,35 +1,21 @@
 import React from 'react'
-import HeaderTitleSvg from './HeaderTitleSvg'
 import styled from '@emotion/styled'
-import DivMargin from '../../DivMargin'
+import DivMargin from '../../ui/DivMargin'
 import textComponent from '../../TextComponents'
+import theme from '../../ui/Theme'
+import { TextStyle, TitleH2 } from '../../ui/TextStyle'
+import { WaveLittleWhite } from '../../ui/svg/Wave'
 
 const HeaderTitleBlock = styled.div`
     max-width: 600px;`
 
 const HeaderTitleH1 = styled.h1`
-    font-family: Blogger Sans;
+    font-family: ${theme.fontFamilyTitle};
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
     line-height: 70px;
-    color: #3BB3C4;;
-    margin: 0;`
-
-const HeaderTitleH2 = styled.h2`
-    font-family: Blogger Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 45px;
-    color: #FFFFFF;
-    margin: 0;`
-
-const HeaderTitleP = styled.p`
-    font-family: Proxima Nova;
-    font-size: 22px;
-    line-height: 30px;
-    color: #FFFFFF;
+    color: ${theme.colors.whiteBlue};
     margin: 0;`
 
 const HeaderTitle = () => {
@@ -39,13 +25,15 @@ const HeaderTitle = () => {
       <HeaderTitleH1>
         {textComponent.header.title[0]}
       </HeaderTitleH1>
-      <HeaderTitleH2>
+      <TitleH2>
         {textComponent.header.title[1]}
-      </HeaderTitleH2>
-      <HeaderTitleSvg />
-      <HeaderTitleP>
+      </TitleH2>
+      <DivMargin height='30px'/>
+      <WaveLittleWhite/>
+      <DivMargin height='30px'/>
+      <TextStyle>
         {textComponent.header.text[0]}
-      </HeaderTitleP>
+      </TextStyle>
     </HeaderTitleBlock>
   )
 }

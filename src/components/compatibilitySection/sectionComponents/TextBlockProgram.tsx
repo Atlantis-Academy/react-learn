@@ -1,20 +1,19 @@
-import DivMargin from '../../DivMargin'
+import DivMargin from '../../ui/DivMargin'
 import React from 'react'
 import styled from '@emotion/styled'
 import textComponent from '../../TextComponents'
+import theme from '../../ui/Theme'
+import { TextStyle } from '../../ui/TextStyle'
 
 
 const TextBlock = styled.div`
 display: flex;`
 
-const Text = styled.p`
+const Text = styled(TextStyle)`
 width: 495px;
-font-family: Proxima Nova;
-font-style: normal;
-font-weight: normal;
 font-size: 18px;
 line-height: 25px;
-color: #0F2B3D;`
+color: ${theme.colors.dark};`
 
 const TextBlockProgram = ()=>{
   return(

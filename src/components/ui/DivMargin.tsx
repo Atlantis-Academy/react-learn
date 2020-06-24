@@ -1,11 +1,7 @@
 import styled from '@emotion/styled'
+import { PropsType } from './Theme'
 
-export interface PropsType {
-  width?: string
-  height?: string
-  colors?: string
-  text?: string
-}
+
 
 const DivMargin = styled.div`
   width: ${(props: PropsType) => props.width};

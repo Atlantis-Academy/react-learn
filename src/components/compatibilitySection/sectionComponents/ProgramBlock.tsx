@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import { AdobeSvg, AmoCrmSvg, BitrixSvg, ExcelSvg, OnesSvg, PpSvg, WordSvg } from './ProgramSvg'
-import DivMargin from '../../DivMargin'
+import { AdobeSvg, AmoCrmSvg, BitrixSvg, ExcelSvg, OnesSvg, PpSvg, WordSvg } from '../../ui/svg/ProgramSvg'
+import DivMargin from '../../ui/DivMargin'
+import theme from '../../ui/Theme'
 
 const OutsideBlock = styled.div`
 width: 810px;
 height: 410px;
-background: #FFFFFF;
+background: ${theme.colors.white};
 display: flex;
 justify-content: center;
 align-items: center;`
@@ -14,7 +15,7 @@ align-items: center;`
 const InsideBlock = styled.div`
 width: 770px;
 height: 370px;
-background: #F2F2F2;
+background: ${theme.colors.beige};
 `
 
 const SvgBlock = styled.div`

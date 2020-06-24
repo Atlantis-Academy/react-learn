@@ -1,13 +1,14 @@
 import React from 'react'
-import DivMargin from '../DivMargin'
+import DivMargin from '../ui/DivMargin'
 import styled from '@emotion/styled'
 import TitleBlock from './sectionComponents/DescrBlock'
 import ProgramBlock from './sectionComponents/ProgramBlock'
 import TextBlockProgram from './sectionComponents/TextBlockProgram'
+import theme from '../ui/Theme'
 
 
 const StyleSection = styled.section`
-background: #F2F2F2;`
+background: ${theme.colors.beige};`
 
 const DescrBlock = styled.div`
 width: 1230px;

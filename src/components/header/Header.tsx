@@ -2,14 +2,12 @@ import React from 'react'
 import HeaderLogo from './headerComponents/HeaderLogo'
 import HeaderBlock from './headerComponents/HeaderBlock'
 import styled from '@emotion/styled'
-import DivMargin from '../DivMargin'
-
-
+import DivMargin from '../ui/DivMargin'
+import theme from '../ui/Theme'
 
 const Header = styled.header`
     height: 800px;
-    background: #0A4759;`
-
+    background: ${theme.colors.darkBlue};`
 
 const HeaderSection = () => {
   return (

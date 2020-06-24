@@ -1,9 +1,7 @@
 import React from 'react'
 import Tabs from './tabsComponents/Tabs'
-import DivMargin from '../DivMargin'
+import DivMargin from '../ui/DivMargin'
 import Adventages from './tabsComponents/Advetages'
-
-
 
 
 const TabsSection = ()=>{
