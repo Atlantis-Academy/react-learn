@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 export interface PropsType {
   width?: string
   height?: string
-  colors?: any
+  colors?: string
   text?: string
 }
 
