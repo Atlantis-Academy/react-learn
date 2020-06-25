@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import textComponent from '../../TextComponents'
-import theme from '../../ui/Theme'
+import textComponent from '../TextComponents'
+import theme from './Theme'
 
 
 const LeftTab = styled.div`

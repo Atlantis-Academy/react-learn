@@ -14,6 +14,7 @@ margin: 0 auto`
 import { injectGlobal } from 'emotion'
 import LicensesSection from './licensesSection/LicensesSection'
 import VideoSlideSection from './videoSlideSection/VidioSlideSection'
+import ProposSection from './proposSection/ProposSection'
 
 injectGlobal`
   * {
@@ -53,6 +54,7 @@ class App extends React.Component {
             <CompatSection/>
             <LicensesSection/>
             <VideoSlideSection/>
+            <ProposSection/>
           </AppSection>
           </ThemeProvider>
         );
