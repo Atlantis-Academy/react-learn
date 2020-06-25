@@ -7,7 +7,7 @@ import TextBlockProgram from './sectionComponents/TextBlockProgram'
 import theme from '../ui/Theme'
 
 
-const StyleSection = styled.section`
+export const StyleSection = styled.section`
 background: ${theme.colors.beige};`
 
 const DescrBlock = styled.div`
