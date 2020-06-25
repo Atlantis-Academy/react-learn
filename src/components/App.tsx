@@ -12,6 +12,7 @@ width: ${(props: any) => props.theme.width};
 margin: 0 auto`
 
 import { injectGlobal } from 'emotion'
+import LicensesSection from './licensesSection/LicensesSection'
 
 injectGlobal`
   * {
@@ -49,6 +50,7 @@ class App extends React.Component {
             <SliderSection/>
             <TabsSection/>
             <CompatSection/>
+            <LicensesSection/>
           </AppSection>
           </ThemeProvider>
         );

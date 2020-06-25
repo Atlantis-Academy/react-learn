@@ -1,13 +1,13 @@
 import DivMargin from '../../ui/DivMargin'
 import { ArrowLeft } from '../../ui/ArrowLeft'
 import { ArrowRight } from '../../ui/ArrowRight'
-import React from 'react'
 import textComponent from '../../TextComponents'
 import { SectionTitleBlock } from '../../ui/SectionTitleBlock'
+import React from 'react'
 import { SectionTitle } from '../../ui/SectionTitle'
 
 
-const SliderTitleBlockSection = ()=>{
+const LicensesTitleBlock = ()=>{
   return(
     <SectionTitleBlock>
       <DivMargin width='105px'/>
@@ -16,10 +16,10 @@ const SliderTitleBlockSection = ()=>{
       <ArrowRight/>
       <DivMargin width='480px' />
       <SectionTitle>
-        {textComponent.sectionTitleBlock[0]}
+        {textComponent.sectionTitleBlock[1]}
       </SectionTitle>
     </SectionTitleBlock>
   )
 }
 
-export default SliderTitleBlockSection
+export default LicensesTitleBlock

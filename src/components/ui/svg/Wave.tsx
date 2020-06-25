@@ -20,3 +20,8 @@ export const WaveBig = [<path
   strokeMiterlimit='10'
 />]
 
+export const Waves = WaveLittle.map((item, index) =>
+  <svg key={index}>
+    {item}
+  </svg>
+);
