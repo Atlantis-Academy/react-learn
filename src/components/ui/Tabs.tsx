@@ -17,7 +17,8 @@ text-align: center;
 color: ${theme.colors.white};
 display: flex;
 align-items: center;
-justify-content: center;`
+justify-content: center;
+cursor: pointer;`
 
 const RightTab = styled(LeftTab)`
 border-radius: 0px 20px 20px 0px;

@@ -15,6 +15,7 @@ import { injectGlobal } from 'emotion'
 import LicensesSection from './licensesSection/LicensesSection'
 import VideoSlideSection from './videoSlideSection/VidioSlideSection'
 import ProposSection from './proposSection/ProposSection'
+import IndustriesSection from './industriesSection/IndustriesSection'
 
 injectGlobal`
   * {
@@ -55,6 +56,7 @@ class App extends React.Component {
             <LicensesSection/>
             <VideoSlideSection/>
             <ProposSection/>
+            <IndustriesSection/>
           </AppSection>
           </ThemeProvider>
         );
