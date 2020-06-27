@@ -1,38 +1,40 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import textComponent from '../TextComponents'
-import theme from './Theme'
 
 
-const LeftTab = styled.div`
-width: 200px;
-height: 40px;
-background: ${theme.colors.colorDark};
-border-radius: 20px 0px 0px 20px;
-font-family: ${theme.fontFamilyText};
-font-weight: 600;
-font-size: 16px;
-line-height: 20px;
-text-align: center;
-color: ${theme.colors.white};
-display: flex;
-align-items: center;
-justify-content: center;
-cursor: pointer;`
+const LeftTab = styled.div<any>(({theme}) => ({
+  width: '200px',
+  height: '40px',
+  background: theme.colors.colorDark,
+  borderRadius: theme.tabsRadius.left,
+  fontFamily: theme.fontFamilyText,
+  fontWeight: 600,
+  fontSize: `${theme.fontSize[0]}px`,
+  lineHeight: '20px',
+  textAlign: 'center',
+  color: theme.colors.white,
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  cursor: 'pointer',
+}))
 
-const RightTab = styled(LeftTab)`
-border-radius: 0px 20px 20px 0px;
-border: 1px solid ${theme.colors.gray};
-background: ${theme.colors.white};
-color: ${theme.colors.colorDark};`
+const RightTab = styled(LeftTab)<any>(({theme}) => ({
+  borderRadius: theme.tabsRadius.right,
+  border: `1px solid ${theme.colors.gray}`,
+  background: theme.colors.white,
+  color: theme.colors.colorDark
+}))
 
-const CenterTab = styled(RightTab)`
-border-radius: 0;
-`
+const CenterTab = styled(RightTab)(() => ({
+  borderRadius: 0
+}))
 
-const TabsBlock = styled.div`
-display: flex;
-justify-content: center;`
+const TabsBlock = styled.div(() => ({
+  display: 'flex',
+  justifyContent: 'center',
+}))
 
 const Tabs = () => {
   return (

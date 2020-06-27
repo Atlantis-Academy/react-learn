@@ -1,5 +1,5 @@
 import React from 'react'
-import DivMargin from '../ui/DivMargin'
+import DivMargin from '../ui/layout/DivMargin'
 import styled from '@emotion/styled'
 import TitleBlock from './sectionComponents/DescrBlock'
 import ProgramBlock from './sectionComponents/ProgramBlock'

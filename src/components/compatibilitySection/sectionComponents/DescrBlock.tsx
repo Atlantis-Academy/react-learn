@@ -4,7 +4,7 @@ import textComponent from '../../TextComponents'
 import theme from '../../ui/Theme'
 import { TitleH2 } from '../../ui/TextStyle'
 import { WaveLittle } from '../../ui/svg/Wave'
-import DivMargin from '../../ui/DivMargin'
+import DivMargin from '../../ui/layout/DivMargin'
 import { SvgStyle } from '../../ui/svg/SvgStyle'
 
 const Title = styled(TitleH2)`

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import { AdobeSvg, AmoCrmSvg, BitrixSvg, ExcelSvg, OnesSvg, PpSvg, WordSvg } from '../../ui/svg/ProgramSvg'
-import DivMargin from '../../ui/DivMargin'
+import DivMargin from '../../ui/layout/DivMargin'
 import theme from '../../ui/Theme'
 
 const OutsideBlock = styled.div`

@@ -1,6 +1,6 @@
 import { SvgStyle } from '../../ui/svg/SvgStyle'
 import { ProposExport5, ProposExport6, ProposExport7, ProposExport8 } from '../../ui/svg/ProposSvg'
-import DivMargin from '../../ui/DivMargin'
+import DivMargin from '../../ui/layout/DivMargin'
 import textComponent from '../../TextComponents'
 import React from 'react'
 import { BlockStyle, Propos, Text, TitlePropos } from './ProposBlock'

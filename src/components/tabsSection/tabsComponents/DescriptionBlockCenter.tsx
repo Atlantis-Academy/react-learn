@@ -1,7 +1,7 @@
 import { DescrBlock, TextStyleTabs, Title } from './DescriptionBlockLeft'
 import React from 'react'
 import { Svg2 } from '../../ui/svg/SvgAdventag'
-import DivMargin from '../../ui/DivMargin'
+import DivMargin from '../../ui/layout/DivMargin'
 import textComponent from '../../TextComponents'
 
 

@@ -1,4 +1,4 @@
-import DivMargin from '../../ui/DivMargin'
+import DivMargin from '../../ui/layout/DivMargin'
 import { ArrowLeft } from '../../ui/ArrowLeft'
 import { ArrowRight } from '../../ui/ArrowRight'
 import textComponent from '../../TextComponents'

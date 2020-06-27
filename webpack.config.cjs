@@ -1,8 +1,10 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-module.exports = {
+import path from 'path'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
 
-  entry: './src/index',
+
+export const module = {
+
+
   output: {
     path: path.join(__dirname, '/dist'),
     filename: 'script.js'

@@ -1,6 +1,6 @@
 import React from 'react'
 import Tabs from '../ui/Tabs'
-import DivMargin from '../ui/DivMargin'
+import DivMargin from '../ui/layout/DivMargin'
 import Adventages from './tabsComponents/Advetages'
 
 

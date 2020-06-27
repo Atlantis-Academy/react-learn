@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from '../../ui/svg/Logo'
 import styled from '@emotion/styled'
-import DivMargin from '../../ui/DivMargin'
+import DivMargin from '../../ui/layout/DivMargin'
 import textComponent from '../../TextComponents'
 import Button from '../../ui/Button'
 

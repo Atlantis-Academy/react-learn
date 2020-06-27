@@ -5,7 +5,7 @@ import { LicenseSvg, LicenseSvg2, LicenseSvg3 } from '../../ui/svg/License'
 import { TextStyle } from '../../ui/TextStyle'
 import theme from '../../ui/Theme'
 import textComponent from '../../TextComponents'
-import DivMargin from '../../ui/DivMargin'
+import DivMargin from '../../ui/layout/DivMargin'
 
 const BlockStyle = styled.div`
 display: flex;`

@@ -1,5 +1,5 @@
 import React from 'react'
-import DivMargin from '../ui/DivMargin'
+import DivMargin from '../ui/layout/DivMargin'
 import { WaveLittleCenter } from '../ui/WaveLittleCenterBlock'
 import theme from '../ui/Theme'
 import { Waves } from '../ui/svg/Wave'

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import theme from '../ui/Theme'
-import DivMargin from '../ui/DivMargin'
+import DivMargin from '../ui/layout/DivMargin'
 import IndusriesTitle from './sectionComponent/IndusriesTitle'
 import IndustriBlock from './sectionComponent/IndustriBlock'
 import { SvgStyle } from '../ui/svg/SvgStyle'

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import DivMargin from '../../ui/DivMargin'
+import DivMargin from '../../ui/layout/DivMargin'
 import theme from '../../ui/Theme'
 import {
   Industri2,

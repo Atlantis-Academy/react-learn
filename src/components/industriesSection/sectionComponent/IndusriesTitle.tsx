@@ -1,7 +1,7 @@
 import { SvgStyle } from '../../ui/svg/SvgStyle'
 import theme from '../../ui/Theme'
 import { Waves } from '../../ui/svg/Wave'
-import DivMargin from '../../ui/DivMargin'
+import DivMargin from '../../ui/layout/DivMargin'
 import textComponent from '../../TextComponents'
 import React from 'react'
 import styled from '@emotion/styled'

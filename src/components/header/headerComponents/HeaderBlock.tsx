@@ -2,7 +2,7 @@ import React from 'react'
 import HeaderTitle from './HeaderTitle'
 import HeaderForm from './HeaderForm'
 import styled from '@emotion/styled'
-import DivMargin from '../../ui/DivMargin'
+import DivMargin from '../../ui/layout/DivMargin'
 
 const HeaderBlockSection = styled.div`
     display: flex;

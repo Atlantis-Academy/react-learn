@@ -1,5 +1,5 @@
 import React from 'react'
-import DivMargin from '../ui/DivMargin'
+import DivMargin from '../ui/layout/DivMargin'
 import SliderTitleBlockSection from './sliderSectionComponents/SliderTitleBlock'
 import SliderBlock from './sliderSectionComponents/SliderBlock'
 import { Waves } from '../ui/svg/Wave'

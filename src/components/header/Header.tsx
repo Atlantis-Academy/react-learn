@@ -2,7 +2,7 @@ import React from 'react'
 import HeaderLogo from './headerComponents/HeaderLogo'
 import HeaderBlock from './headerComponents/HeaderBlock'
 import styled from '@emotion/styled'
-import DivMargin from '../ui/DivMargin'
+import DivMargin from '../ui/layout/DivMargin'
 import theme from '../ui/Theme'
 
 const Header = styled.header`

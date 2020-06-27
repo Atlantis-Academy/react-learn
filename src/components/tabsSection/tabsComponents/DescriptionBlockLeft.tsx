@@ -1,5 +1,5 @@
 import { Svg1 } from '../../ui/svg/SvgAdventag'
-import DivMargin from '../../ui/DivMargin'
+import DivMargin from '../../ui/layout/DivMargin'
 import textComponent from '../../TextComponents'
 import React from 'react'
 import styled from '@emotion/styled'

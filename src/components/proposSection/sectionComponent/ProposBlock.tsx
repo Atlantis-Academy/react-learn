@@ -5,7 +5,7 @@ import theme from '../../ui/Theme'
 import textComponent from '../../TextComponents'
 import { SvgStyle } from '../../ui/svg/SvgStyle'
 import { ProposExport1, ProposExport2, ProposExport3, ProposExport4 } from '../../ui/svg/ProposSvg'
-import DivMargin from '../../ui/DivMargin'
+import DivMargin from '../../ui/layout/DivMargin'
 
 
 export const BlockStyle = styled.div`

@@ -1,5 +1,5 @@
 import React from 'react'
-import DivMargin from '../ui/DivMargin'
+import DivMargin from '../ui/layout/DivMargin'
 import Tabs from '../ui/Tabs'
 import ProposBlock from './sectionComponent/ProposBlock'
 import ProposBlock2 from './sectionComponent/ProposBlock2'

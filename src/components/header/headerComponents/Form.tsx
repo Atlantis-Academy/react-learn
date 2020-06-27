@@ -1,6 +1,6 @@
 import React from 'react'
 import textComponent from '../../TextComponents'
-import DivMargin from '../../ui/DivMargin'
+import DivMargin from '../../ui/layout/DivMargin'
 import { ButtonForm, FieldSetForm, FormStyle, InputForm, Legend } from '../../ui/FormStyle'
 
 

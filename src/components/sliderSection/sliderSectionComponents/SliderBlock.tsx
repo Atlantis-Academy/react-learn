@@ -1,4 +1,4 @@
-import DivMargin from '../../ui/DivMargin'
+import DivMargin from '../../ui/layout/DivMargin'
 import React from 'react'
 import styled from '@emotion/styled'
 import textComponent from '../../TextComponents'
