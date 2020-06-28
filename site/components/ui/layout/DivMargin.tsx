@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { PropsType } from '../Theme'
+import { PropsType } from '../Types'
 
 
 

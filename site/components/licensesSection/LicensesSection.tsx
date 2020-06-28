@@ -2,7 +2,7 @@ import React from 'react'
 import DivMargin from '../ui/layout/DivMargin'
 import { WaveLittleCenter } from '../ui/WaveLittleCenterBlock'
 import theme from '../ui/Theme'
-import { Waves } from '../ui/svg/Wave'
+import { WavesL } from '../ui/svg/Wave'
 import { SvgStyle } from '../ui/svg/SvgStyle'
 import LicensesTitleBlock from './sectionComponents/LicensesTitleBlock'
 import LicensesBlock from './sectionComponents/LicenseBlock'
@@ -19,7 +19,7 @@ const LicensesSection = ()=>{
           fill='none'
           stroke={theme.colors.dark}
         >
-          {Waves}
+          {WavesL}
         </SvgStyle>
         <DivMargin height='30px'/>
       </WaveLittleCenter>

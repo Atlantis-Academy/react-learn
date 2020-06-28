@@ -1,7 +1,7 @@
 import React from 'react'
-import textComponent from '../../TextComponents'
-import DivMargin from '../../ui/layout/DivMargin'
-import { ButtonForm, FieldSetForm, FormStyle, InputForm, Legend } from '../../ui/FormStyle'
+import textComponent from './components/TextComponents'
+import DivMargin from './components/ui/layout/DivMargin'
+import { ButtonForm, FieldSetForm, FormStyle, InputForm, Legend } from './components/ui/FormStyle'
 
 
 class Form extends React.Component<any, any> {

@@ -1,6 +1,6 @@
 import { SvgStyle } from '../../ui/svg/SvgStyle'
 import theme from '../../ui/Theme'
-import { Waves } from '../../ui/svg/Wave'
+import { WavesL } from '../../ui/svg/Wave'
 import DivMargin from '../../ui/layout/DivMargin'
 import textComponent from '../../TextComponents'
 import React from 'react'
@@ -21,7 +21,7 @@ const IndusriesTitle = ()=>{
         fill='none'
         stroke={theme.colors.dark}
       >
-        {Waves}
+        {WavesL}
       </SvgStyle>
       <DivMargin height='30px'/>
       <Title>

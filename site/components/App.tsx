@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderSection from './header/Header'
+import HeaderSection from '../Header'
 import styled from '@emotion/styled'
 import SliderSection from './sliderSection/SliderSection'
 import {ThemeProvider} from 'emotion-theming'
@@ -29,14 +29,14 @@ injectGlobal`
     font-family: 'Proxima Nova';
     src: local('Proxima Nova'),
       local('ProximaNova-Regular'),
-      url('./src/components/ui/fonts/ProximaNova-Regular.woff2')
+      url('./site/components/ui/fonts/ProximaNova-Regular.woff2')
         format('woff2'); 
   }
   @font-face {
   font-family: 'Blogger Sans';
     src: local('Blogger Sans'),
       local('BloggerSans-Bold'),
-      url('./src/components/ui/fonts/BloggerSans-Bold.woff2')
+      url('./site/components/ui/fonts/BloggerSans-Bold.woff2')
         format('woff2');
   }
  `

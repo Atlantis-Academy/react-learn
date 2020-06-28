@@ -1,13 +1,6 @@
 
 
-export interface PropsType {
-  width?: string
-  height?: string
-  colors?: string
-  text?: string
-  fill?: string
-  stroke?: string
-}
+
 
 
 const theme = {
