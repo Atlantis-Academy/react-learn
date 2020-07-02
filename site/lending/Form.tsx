@@ -62,7 +62,7 @@ class Form extends React.Component<any, any> {
     return (
 
       <FormStyle>
-        <DivMargin height='60px' />
+        <DivMargin height='30px' />
         <FieldSetForm>
           <Legend>Имя</Legend>
           <InputForm

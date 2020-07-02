@@ -6,7 +6,11 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "lint": "mctl lint",
+    "typecheck": "mctl typecheck",
+    "format": "mctl format",
+    "commit": "mctl commit"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +28,7 @@
     "@commitlint/cli": "^9.0.1",
     "@commitlint/config-conventional": "^9.0.1",
     "@commitlint/config-lerna-scopes": "^9.0.1",
+    "@monstrs/mctl": "^0.1.82",
     "babel-loader": "^8.1.0",
     "commitizen": "^4.1.2",
     "css-loader": "^3.6.0",
@@ -44,10 +49,12 @@
     "@types/react": "^16.9.38",
     "@types/react-dom": "^16.9.8",
     "@types/styled-components": "^5.1.0",
+    "@types/styled-system": "^5.1.9",
     "emotion": "^10.0.27",
     "emotion-theming": "^10.0.27",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.1.1",
+    "styled-system": "^5.1.5"
   }
 }

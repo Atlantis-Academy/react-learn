@@ -10,6 +10,7 @@ import Video from './Video'
 import Pointers from './Pointers'
 import Industry from './Industry'
 import { AppStyle } from '../ui/App'
+import Header from '../ui/header/Header'
 
 
 class App extends React.Component {
@@ -17,14 +18,17 @@ class App extends React.Component {
     return (
       <ThemeProvider theme={theme}>
         <AppStyle>
-          <HeroSection />
-          <Automatization />
-          <Bullets />
-          <Case />
-          <Licenses />
-          <Video />
-          <Pointers />
-          <Industry />
+          <Header />
+          <main>
+            <HeroSection />
+            <Automatization />
+            <Bullets />
+            <Case />
+            <Licenses />
+            <Video />
+            <Pointers />
+            <Industry />
+          </main>
         </AppStyle>
       </ThemeProvider>
     );
