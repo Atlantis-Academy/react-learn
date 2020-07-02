@@ -9,17 +9,14 @@ import Licenses from './Licenses'
 import Video from './Video'
 import Pointers from './Pointers'
 import Industry from './Industry'
-import { Box } from '../ui/layout/Box'
+import { AppStyle } from '../ui/App'
 
 
 class App extends React.Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <Box
-          width={'1440px'}
-          margin={'0 auto'}
-        >
+        <AppStyle>
           <HeroSection />
           <Automatization />
           <Bullets />
@@ -28,7 +25,7 @@ class App extends React.Component {
           <Video />
           <Pointers />
           <Industry />
-        </Box>
+        </AppStyle>
       </ThemeProvider>
     );
   }
