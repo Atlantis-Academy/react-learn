@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroSection from './Hero'
+import Hero from './Hero'
 import Automatization from './Automatization'
 import { ThemeProvider } from 'emotion-theming'
 import theme from '../ui/theme/Theme'
@@ -19,7 +19,7 @@ class App extends React.Component {
       <ThemeProvider theme={theme}>
         <AppStyle>
           <Header />
-          <HeroSection />
+          <Hero />
           <Automatization />
           <Bullets />
           <Case />

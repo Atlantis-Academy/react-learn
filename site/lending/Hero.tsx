@@ -6,7 +6,7 @@ import { HeaderFormStyle } from '../ui/hero/HeaderForm'
 import { TextForm } from '../ui/hero/TextForm'
 import Form from './Form'
 import { WavesL } from '../ui/svg/Wave'
-import { HeaderTitleH1 } from '../ui/hero/HeaderTitle'
+import { HeaderTitleH1 } from '../ui/hero/HeaderTitle'    //TODO: all text in component
 import { TextStyle, TitleH2 } from '../ui/text/TextStyle'
 import { Section } from '../ui/hero/Section'
 import { BoxSection } from '../ui/layout/BoxSection'
@@ -23,7 +23,7 @@ const HeroSection = () => {
       >
         <Box maxWidth='600px'>
           <HeaderTitleH1>
-            {textComponent.header.title[0]}
+            {textComponent.header.title[0]}  //TODO: text in massage (react-intl)
           </HeaderTitleH1>
           <TitleH2>
             {textComponent.header.title[1]}
