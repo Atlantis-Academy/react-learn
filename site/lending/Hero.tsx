@@ -9,10 +9,10 @@ import { WavesL } from '../ui/svg/Wave'
 import { HeaderTitleH1 } from '../ui/hero/HeaderTitle'
 import { TextStyle, TitleH2 } from '../ui/text/TextStyle'
 import { Section } from '../ui/hero/Section'
-
 import { BoxSection } from '../ui/layout/BoxSection'
 import { HeaderFormBlock } from '../ui/hero/HeaderFormBlock'
-
+import { WaveFormTop } from '../ui/hero/WaveFormTop'
+import { WaveFormBottom } from '../ui/hero/WaveFormBottom'
 
 
 const HeroSection = () => {
@@ -39,12 +39,16 @@ const HeroSection = () => {
           </TextStyle>
         </Box>
         <HeaderFormBlock>
-          <HeaderFormStyle>
-            <TitleForm>
-              {textComponent.header.title[2]}
-            </TitleForm>
-            <Form />
-          </HeaderFormStyle>
+          <WaveFormTop>
+            <WaveFormBottom>
+              <HeaderFormStyle>
+                <TitleForm>
+                  {textComponent.header.title[2]}
+                </TitleForm>
+                <Form />
+              </HeaderFormStyle>
+            </WaveFormBottom>
+          </WaveFormTop>
         </HeaderFormBlock>
       </BoxSection>
       <DivMargin height='110px' />
