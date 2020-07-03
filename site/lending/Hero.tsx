@@ -3,7 +3,7 @@ import DivMargin from '../ui/layout/DivMargin'
 import { Box } from '../ui/layout/Box'
 import textComponent from '../ui/text/TextComponents'
 import { HeaderFormStyle } from '../ui/hero/HeaderForm'
-import { TitleForm } from '../ui/hero/TitleForm'
+import { TextForm } from '../ui/hero/TextForm'
 import Form from './Form'
 import { WavesL } from '../ui/svg/Wave'
 import { HeaderTitleH1 } from '../ui/hero/HeaderTitle'
@@ -17,7 +17,7 @@ import { WaveFormBottom } from '../ui/hero/WaveFormBottom'
 
 const HeroSection = () => {
   return (
-    <Section>
+    <Section>   //TODO: delete Section after all fixes
       <BoxSection
         alignItems={'center'}
       >
@@ -42,9 +42,9 @@ const HeroSection = () => {
           <WaveFormTop>
             <WaveFormBottom>
               <HeaderFormStyle>
-                <TitleForm>
+                <TextForm>
                   {textComponent.header.title[2]}
-                </TitleForm>
+                </TextForm>
                 <Form />
               </HeaderFormStyle>
             </WaveFormBottom>

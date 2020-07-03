@@ -19,16 +19,14 @@ class App extends React.Component {
       <ThemeProvider theme={theme}>
         <AppStyle>
           <Header />
-          <main>
-            <HeroSection />
-            <Automatization />
-            <Bullets />
-            <Case />
-            <Licenses />
-            <Video />
-            <Pointers />
-            <Industry />
-          </main>
+          <HeroSection />
+          <Automatization />
+          <Bullets />
+          <Case />
+          <Licenses />
+          <Video />
+          <Pointers />
+          <Industry />
         </AppStyle>
       </ThemeProvider>
     );
