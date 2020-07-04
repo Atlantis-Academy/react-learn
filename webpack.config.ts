@@ -1,5 +1,6 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import * as path from 'path'
+import htmlTemplate from 'html-webpack-template'
 
 export const mode = 'development'
 
@@ -46,9 +47,9 @@ export const resolve = {
 
 export const plugins = [
   new HtmlWebpackPlugin({
-    title: 'Atlantis United',
-
-    template: './site/index.html',
-
+    title: 'Riverdoc',
+    template: htmlTemplate,
+    lang: 'ru',
+    appMountId: 'root'
   }),
 ]

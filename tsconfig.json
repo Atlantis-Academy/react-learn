@@ -39,5 +39,6 @@
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true
-  }
+  },
+  "exclude": ["node_modules"]
 }
