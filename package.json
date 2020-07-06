@@ -6,7 +6,11 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "lint": "mctl lint",
+    "typecheck": "mctl typecheck",
+    "format": "mctl format",
+    "commit": "mctl commit"
   },
   "keywords": [],
   "author": "",
@@ -21,16 +25,14 @@
     "@babel/preset-env": "^7.10.3",
     "@babel/preset-react": "^7.10.1",
     "@babel/preset-typescript": "^7.10.1",
-    "@commitlint/cli": "^9.0.1",
-    "@commitlint/config-conventional": "^9.0.1",
-    "@commitlint/config-lerna-scopes": "^9.0.1",
+    "@monstrs/mctl": "^0.1.82",
+    "@types/html-webpack-template": "^6.0.4",
     "babel-loader": "^8.1.0",
-    "commitizen": "^4.1.2",
     "css-loader": "^3.6.0",
     "cz-customizable": "^6.2.0",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
-    "husky": "^4.2.5",
+    "html-webpack-template": "^6.2.0",
     "source-map-loader": "^1.0.0",
     "style-loader": "^1.2.1",
     "typescript": "^3.9.5",
@@ -44,10 +46,14 @@
     "@types/react": "^16.9.38",
     "@types/react-dom": "^16.9.8",
     "@types/styled-components": "^5.1.0",
+    "@types/styled-system": "^5.1.9",
     "emotion": "^10.0.27",
     "emotion-theming": "^10.0.27",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "styled-components": "^5.1.1"
+    "react-intl": "^5.0.2",
+    "styled-components": "^5.1.1",
+    "styled-system": "^5.1.5",
+    "styled-tools": "^1.7.2"
   }
 }

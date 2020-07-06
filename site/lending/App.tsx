@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroSection from './Hero'
+import Hero from './Hero'
 import Automatization from './Automatization'
 import { ThemeProvider } from 'emotion-theming'
 import theme from '../ui/theme/Theme'
@@ -10,6 +10,7 @@ import Video from './Video'
 import Pointers from './Pointers'
 import Industry from './Industry'
 import { AppStyle } from '../ui/App'
+import Header from '../ui/header/Header'
 
 
 class App extends React.Component {
@@ -17,7 +18,8 @@ class App extends React.Component {
     return (
       <ThemeProvider theme={theme}>
         <AppStyle>
-          <HeroSection />
+          <Header />
+          <Hero />
           <Automatization />
           <Bullets />
           <Case />

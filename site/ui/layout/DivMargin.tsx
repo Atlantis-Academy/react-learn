@@ -1,10 +1,11 @@
 import styled from '@emotion/styled'
-import { PropsType } from '../Types'
+import { height, width } from 'styled-system'
 
 
 
-const DivMargin = styled.div`
-  width: ${(props: PropsType) => props.width};
-  height: ${(props: PropsType) => props.height}`
+const DivMargin = styled.div(
+  width,
+  height
+)
 
 export default DivMargin

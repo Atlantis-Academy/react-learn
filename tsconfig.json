@@ -38,6 +38,9 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": true,
-    "importHelpers": true
-  }
+    "importHelpers": true,
+    "typeRoots" : ["./typings"],
+    "resolveJsonModule": true
+  },
+  "exclude": ["node_modules"]
 }
