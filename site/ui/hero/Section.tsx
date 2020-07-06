@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
-import theme from '../theme/Theme'
 
-const Section: any = styled.section(() => ({
+
+const Section = styled.section<any>(({theme}) => ({
   background: theme.colors.darkBlue,
 }))
 

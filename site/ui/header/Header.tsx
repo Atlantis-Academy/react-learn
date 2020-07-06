@@ -2,13 +2,15 @@ import styled from '@emotion/styled'
 import theme from '../theme/Theme'
 import Logo from '../svg/Logo'
 import Button from '../Button'
-import textComponent from '../text/TextComponents'
 import React from 'react'
 import DivMargin from '../layout/DivMargin'
+import { FormattedMessage } from 'react-intl'
+
 
 const HeaderStyle = styled.header(()=>({
   background: theme.colors.darkBlue
 }))
+
 
 
 const Block = styled.div(() => ({
@@ -25,7 +27,7 @@ const Header = () => {
       <Block>
       <Logo />
       <Button>
-        {textComponent.buttonText[1]}
+        <FormattedMessage id={'header.button'}/>
       </Button>
       </Block>
     </HeaderStyle>

@@ -1,32 +1,32 @@
 import React from 'react'
 import DivMargin from '../ui/layout/DivMargin'
 import { Box } from '../ui/layout/Box'
-import textComponent from '../ui/text/TextComponents'
 import { HeaderFormStyle } from '../ui/hero/HeaderForm'
 import { TextForm } from '../ui/hero/TextForm'
 import Form from './Form'
 import { WavesL } from '../ui/svg/Wave'
-import { HeaderTitleH1 } from '../ui/hero/HeaderTitle'    //TODO: all text in component
+import { Text } from '../ui/hero/HeaderTitle'
 import { TextStyle, TitleH2 } from '../ui/text/TextStyle'
 import { Section } from '../ui/hero/Section'
 import { BoxSection } from '../ui/layout/BoxSection'
 import { HeaderFormBlock } from '../ui/hero/HeaderFormBlock'
 import { WaveFormTop } from '../ui/hero/WaveFormTop'
 import { WaveFormBottom } from '../ui/hero/WaveFormBottom'
+import { FormattedMessage } from 'react-intl'
 
 
 const HeroSection = () => {
   return (
-    <Section>   //TODO: delete Section after all fixes
+    <Section>
       <BoxSection
         alignItems={'center'}
       >
         <Box maxWidth='600px'>
-          <HeaderTitleH1>
-            {textComponent.header.title[0]}  //TODO: text in massage (react-intl)
-          </HeaderTitleH1>
+          <Text TextTheme='h1'>
+            <FormattedMessage id={'hero.title'}/>
+          </Text>
           <TitleH2>
-            {textComponent.header.title[1]}
+            <FormattedMessage id={'hero.subTitle'}/>
           </TitleH2>
           <DivMargin height='30px' />
           <WavesL
@@ -35,7 +35,7 @@ const HeroSection = () => {
           />
           <DivMargin height='30px' />
           <TextStyle>
-            {textComponent.header.text[0]}
+            <FormattedMessage id={'hero.descr'}/>
           </TextStyle>
         </Box>
         <HeaderFormBlock>
@@ -43,7 +43,7 @@ const HeroSection = () => {
             <WaveFormBottom>
               <HeaderFormStyle>
                 <TextForm>
-                  {textComponent.header.title[2]}
+                  <FormattedMessage id={'hero.form.title'}/>
                 </TextForm>
                 <Form />
               </HeaderFormStyle>

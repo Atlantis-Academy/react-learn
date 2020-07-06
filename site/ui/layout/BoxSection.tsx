@@ -1,17 +1,21 @@
 import styled from '@emotion/styled'
-import { alignItems, display, justifyContent, margin, maxWidth } from 'styled-system'
+import { alignItems, display, justifyContent, maxWidth } from 'styled-system'
+import { switchProp } from 'styled-tools'
+
 
 
 export const BoxSection = styled.div(
   maxWidth,
-  margin,
   display,
   justifyContent,
   alignItems,
+  switchProp('margin', {
+    center: 'margin: 0 auto'
+}),
 )
 
 BoxSection.defaultProps = {
   maxWidth: '1230px',
-  margin: '0 auto',
+  margin: 'center',
   display: 'flex'
 }

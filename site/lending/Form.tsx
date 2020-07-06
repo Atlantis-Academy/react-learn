@@ -1,7 +1,7 @@
 import React from 'react'
-import textComponent from '../ui/text/TextComponents'
 import DivMargin from '../ui/layout/DivMargin'
 import { ButtonForm, FieldSetForm, FormStyle, InputForm, Legend } from '../ui/FormStyle'
+import { FormattedMessage } from 'react-intl'
 
 
 class Form extends React.Component<any, any> {
@@ -64,7 +64,7 @@ class Form extends React.Component<any, any> {
       <FormStyle>
         <DivMargin height='30px' />
         <FieldSetForm>
-          <Legend>Имя</Legend>
+          <Legend><FormattedMessage id={'hero.form.name'}/></Legend>
           <InputForm
             type='text'
             name='name'
@@ -74,7 +74,7 @@ class Form extends React.Component<any, any> {
         </FieldSetForm>
         <DivMargin height='8px' />
         <FieldSetForm>
-          <Legend>Телефон</Legend>
+          <Legend><FormattedMessage id={'hero.form.phone'}/></Legend>
           <InputForm
             type='text'
             name='phone'
@@ -94,7 +94,7 @@ class Form extends React.Component<any, any> {
         </FieldSetForm>
         <DivMargin height='8px' />
         <FieldSetForm>
-          <Legend>Организация</Legend>
+          <Legend><FormattedMessage id={'hero.form.job'}/></Legend>
           <InputForm
             type='text'
             name='job'
@@ -103,7 +103,7 @@ class Form extends React.Component<any, any> {
           />
         </FieldSetForm>
         <DivMargin height='8px' />
-        <ButtonForm onClick={this.handleButton}>{textComponent.buttonText[2]}</ButtonForm>
+        <ButtonForm onClick={this.handleButton}><FormattedMessage id={'hero.form.button'}/></ButtonForm>
       </FormStyle>
 
     );
