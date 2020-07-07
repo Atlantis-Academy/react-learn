@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './lending/App';
+import App from './containers/App';
 import { IntlProvider } from 'react-intl'
 import Ru from './ui/text/ru.json'
 import En from './ui/text/en.json'
