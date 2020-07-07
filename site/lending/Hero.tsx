@@ -1,18 +1,17 @@
 import React from 'react'
 import DivMargin from '../ui/layout/DivMargin'
 import { Box } from '../ui/layout/Box'
-import { HeaderFormStyle } from '../ui/hero/HeaderForm'
-import { TextForm } from '../ui/hero/TextForm'
+import { HeroForm } from '../ui/hero/HeroForm'
 import Form from './Form'
 import { WavesL } from '../ui/svg/Wave'
-import { Text } from '../ui/hero/HeaderTitle'
-import { TextStyle, TitleH2 } from '../ui/text/TextStyle'
 import { Section } from '../ui/hero/Section'
 import { BoxSection } from '../ui/layout/BoxSection'
-import { HeaderFormBlock } from '../ui/hero/HeaderFormBlock'
+import { HeroFormBlock } from '../ui/hero/HeroFormBlock'
 import { WaveFormTop } from '../ui/hero/WaveFormTop'
 import { WaveFormBottom } from '../ui/hero/WaveFormBottom'
 import { FormattedMessage } from 'react-intl'
+import { Text } from '../ui/text/Text'
+import theme from '../ui/theme/Theme'
 
 
 const HeroSection = () => {
@@ -22,34 +21,51 @@ const HeroSection = () => {
         alignItems={'center'}
       >
         <Box maxWidth='600px'>
-          <Text TextTheme='h1'>
-            <FormattedMessage id={'hero.title'}/>
-          </Text>
-          <TitleH2>
-            <FormattedMessage id={'hero.subTitle'}/>
-          </TitleH2>
+          <h1>
+            <Text themeText='h1'>
+              <FormattedMessage id={'hero.title'} />
+            </Text>
+          </h1>
+          <h2>
+            <Text
+              themeText='h2'
+              color={theme.colors.white}
+            >
+              <FormattedMessage id={'hero.subTitle'} />
+            </Text>
+          </h2>
           <DivMargin height='30px' />
           <WavesL
             width={82}
             height={12}
           />
           <DivMargin height='30px' />
-          <TextStyle>
-            <FormattedMessage id={'hero.descr'}/>
-          </TextStyle>
+          <Text
+            color={theme.colors.white}
+            size={'22px'}
+          >
+            <FormattedMessage id={'hero.descr'} />
+          </Text>
         </Box>
-        <HeaderFormBlock>
+        <HeroFormBlock>
           <WaveFormTop>
             <WaveFormBottom>
-              <HeaderFormStyle>
-                <TextForm>
-                  <FormattedMessage id={'hero.form.title'}/>
-                </TextForm>
+              <HeroForm>
+                <DivMargin height='30px' />
+                <Text
+                  size={'28px'}
+                  color={theme.colors.white}
+                  lineHeight={'30px'}
+                  font={theme.fontFamilyTitle}
+                >
+                  <FormattedMessage id={'hero.form.title'} />
+                </Text>
                 <Form />
-              </HeaderFormStyle>
+                <DivMargin height='30px' />
+              </HeroForm>
             </WaveFormBottom>
           </WaveFormTop>
-        </HeaderFormBlock>
+        </HeroFormBlock>
       </BoxSection>
       <DivMargin height='110px' />
     </Section>
