@@ -7,5 +7,9 @@
   "hero.form.button": "Submit",
   "hero.form.name": "Name",
   "hero.form.phone": "Phone",
-  "hero.form.job": "Organization"
+  "hero.form.job": "Organization",
+
+  "auto.title": "Workflow automation",
+  "auto.text": "Document management is not just a means of optimizing internal processes, it is an opportunity to gain an advantage in the face of fierce competition. Automated workflow systems help accelerate processes, give managers a complete picture of the company's work to make both operational and strategic decisions.",
+  "auto.button": "send request"
 }

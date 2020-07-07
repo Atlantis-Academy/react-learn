@@ -1,20 +1,21 @@
 import styled from '@emotion/styled'
 import {
   alignItems,
-  background,
+  background, backgroundImage,
   border,
   borderRadius,
   display,
   height, justifyContent,
   left,
   margin, maxWidth,
-  position, textAlign, top, zIndex
+  position, textAlign, top, width, zIndex
 } from 'styled-system'
 
 
 export const Box = styled.div(
   display,
   maxWidth,
+  width,
   position,
   background,
   margin,
@@ -28,6 +29,7 @@ export const Box = styled.div(
   top,
   height,
   border,
+  backgroundImage,
 )
 
 

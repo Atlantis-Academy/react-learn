@@ -20,6 +20,12 @@ ${switchProp('themeText', {
     fontFamily: theme.fontFamilyTitle,
     fontSize: '40px',
     lineHeight: '45px',
+  },
+  sectionTitle:{
+    fontFamily: theme.fontFamilyTitle,
+    fontSize: '45px',
+    lineHeight: '45px',
+    color: theme.colors.dark
   }
 })}
 `
