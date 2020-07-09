@@ -1,18 +1,18 @@
-import styled from '@emotion/styled'
+import styled from 'styled-components'
+import { prop } from 'styled-tools'
 import theme from './theme/Theme'
 
 
-const Button = styled.button(() => ({
-  padding: '10px 30px',
-  border: `1px solid ${theme.colors.white}`,
-  borderRadius: '5px',
-  color: theme.colors.white,
-  background: 'transparent',
-  fontFamily: theme.fontFamilyText,
-  fontWeight: 600,
-  fontSize: '16px',
-  textTransform: 'uppercase',
-  cursor: 'pointer',
-}))
 
-export default Button
+export const Button: any = styled.button`
+  padding: ${prop('padding', '15px 20px')};
+  border: 1px solid ${theme.colors.white};
+  border-radius: 5px;
+  color: ${theme.colors.white};
+  background: ${prop('bg', `${theme.colors.whiteBlue}`)};
+  font-family: ${theme.fontFamilyText};
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+`

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import textComponent from './text/TextComponents'
+import { BoxSection } from './layout/BoxSection'
+import { FormattedMessage } from 'react-intl'
 
 
 const LeftTab = styled.div<any>(({theme}) => ({
@@ -31,24 +32,20 @@ const CenterTab = styled(RightTab)(() => ({
   borderRadius: 0
 }))
 
-const TabsBlock = styled.div(() => ({
-  display: 'flex',
-  justifyContent: 'center',
-}))
 
 const Tabs = () => {
   return (
-    <TabsBlock>
+    <BoxSection justifyContent={'center'}>
       <LeftTab>
-        {textComponent.tabsText[0]}
+        <FormattedMessage id={'left.tab'}/>
       </LeftTab>
       <CenterTab>
-        {textComponent.tabsText[1]}
+        <FormattedMessage id={'center.tab'}/>
       </CenterTab>
       <RightTab>
-        {textComponent.tabsText[2]}
+        <FormattedMessage id={'right.tab'}/>
       </RightTab>
-    </TabsBlock>
+    </BoxSection>
   )
 }
 
