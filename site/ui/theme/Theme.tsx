@@ -8,7 +8,9 @@ injectGlobal`
   button, input, textarea {
         outline: none;
 }
-  body{margin: 0}
+  body, h1, h2, p{margin: 0}
+
+  
   @font-face {
     font-family: 'Proxima Nova';
     src: local('Proxima Nova'),
@@ -42,7 +44,8 @@ const theme = {
   width: '1440px',
   fontFamilyText: 'Proxima Nova',
   fontFamilyTitle: 'Blogger Sans',
-  fontSize: [16],
+  fontSize: [16, 40, 22],
+  lineHeight: [45],
   tabsRadius: {
     left: '20px 0px 0px 20px',
     right: '0px 20px 20px 0px'
