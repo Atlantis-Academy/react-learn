@@ -11,5 +11,16 @@
 
   "auto.title": "Workflow automation",
   "auto.text": "Document management is not just a means of optimizing internal processes, it is an opportunity to gain an advantage in the face of fierce competition. Automated workflow systems help accelerate processes, give managers a complete picture of the company's work to make both operational and strategic decisions.",
-  "auto.button": "send request"
+  "auto.button": "send request",
+
+  "left.tab": "Beginners",
+  "center.tab": "Small business",
+  "right.tab": "To enterprises",
+
+  "bullets.speed.title": "Tuning speed",
+  "bullets.speed.descr": "The client is provided with a “turnkey” software project, with the possibility of connecting individual tools necessary for the operation of an individual enterprise",
+  "bullets.pluses.title": "Pros for business",
+  "bullets.pluses.descr": "The system is a turnkey solution with a simple licensing scheme - there is no need to buy additional blocks or modules",
+  "bullets.cost.title": "Implementation cost",
+  "bullets.cost.descr": "It adapts to the user, depending on the needs and direction and size of the company, you do not have to overpay for unused functions"
 }

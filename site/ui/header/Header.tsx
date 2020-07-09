@@ -13,18 +13,21 @@ const HeaderStyle = styled.header(()=>({
 }))
 
 
-const Header = () => {
-  return (
-    <HeaderStyle>
-      <DivMargin height={'50px'}/>
-      <BoxSection justifyContent={'space-between'}>
-      <Logo />
-      <Button bg={'transparent'} padding={'10px 30px'}>
-        <FormattedMessage id={'header.button'}/>
-      </Button>
-      </BoxSection>
-    </HeaderStyle>
-  )
+const Header = ()=>{
+    return (
+      <HeaderStyle>
+        <DivMargin height={'50px'} />
+        <BoxSection justifyContent={'space-between'}>
+          <Logo />
+          <Button
+            bg={'transparent'}
+            padding={'10px 30px'}
+          >
+            <FormattedMessage id={'header.button'} />
+          </Button>
+        </BoxSection>
+      </HeaderStyle>
+    )
 }
 
 export default Header
