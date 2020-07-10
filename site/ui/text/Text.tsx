@@ -8,6 +8,7 @@ color: ${prop('color', `${theme.colors.dark}`)};
 font-size: ${prop('size', '20px')};
 line-height: ${prop('lineHeight', '30px')};
 font-family: ${prop('font', `${theme.fontFamilyText}`)};
+width: ${prop('width')};
 ${switchProp('themeText', {
   h1: {
     color: theme.colors.whiteBlue,
@@ -21,7 +22,7 @@ ${switchProp('themeText', {
     fontSize: '40px',
     lineHeight: '45px',
   },
-  sectionTitle:{
+  sectionTitle: {
     fontFamily: theme.fontFamilyTitle,
     fontSize: '45px',
     lineHeight: '45px',

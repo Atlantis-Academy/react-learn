@@ -22,5 +22,8 @@
   "bullets.pluses.title": "Pros for business",
   "bullets.pluses.descr": "The system is a turnkey solution with a simple licensing scheme - there is no need to buy additional blocks or modules",
   "bullets.cost.title": "Implementation cost",
-  "bullets.cost.descr": "It adapts to the user, depending on the needs and direction and size of the company, you do not have to overpay for unused functions"
+  "bullets.cost.descr": "It adapts to the user, depending on the needs and direction and size of the company, you do not have to overpay for unused functions",
+
+  "case.title": "Riverdoc compatibility with other systems",
+  "case.descr": "The system is compatible with office suites MS Office, Adobe Arcobat, 1C, Bitrix24, AmoCRM (and other SaaS), as well as with formats (Word, Excel, Powerpoint, Acrobat)"
 }

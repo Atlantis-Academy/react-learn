@@ -4,7 +4,8 @@ import theme from './theme/Theme'
 
 
 const Section: any = styled.section`
-background: ${prop('bg', `${theme.colors.darkBlue}`)}
+background: ${prop('bg', `${theme.colors.darkBlue}`)};
+position: ${prop('position')};
 `
 
 export default Section

@@ -3,23 +3,32 @@ import DivMargin from '../ui/layout/DivMargin'
 import theme from '../ui/theme/Theme'
 import { Box } from '../ui/layout/Box'
 import { WavesL } from '../ui/svg/Wave'
-import { Title } from '../ui/case/Title'
-import textComponent from '../ui/text/TextComponents'
-import { Text } from '../ui/case/Text'
+import { Text } from '../ui/text/Text'
 import { AdobeSvg, AmoCrmSvg, BitrixSvg, ExcelSvg, OnesSvg, PpSvg, WordSvg } from '../ui/svg/ProgramSvg'
+import Section from '../ui/Section'
+import { BoxSection } from '../ui/layout/BoxSection'
+import { FormattedMessage } from 'react-intl'
 
 
 const Case = () => {
   return (
-    <Box background={theme.colors.beige}>
-      <DivMargin height='120px' />
+    <Section
+      bg={theme.colors.beige}
+      position={'relative'}
+    >
       <Box
-        width={'1230px'}
-        display={'flex'}
-        margin={'0 auto'}
+        width={'285px'}
+        height={'186px'}
+        backgroundImage={'url(\'site/ui/svg/Wave.svg\')'}
+        position={'absolute'}
+        left={'980px'}
+        top={'-64px'}
+      />
+      <Box height={'120px'} />
+      <BoxSection
         justifyContent={'space-between'}
       >
-        <div>
+        <Box width={'390px'}>
           <WavesL
             width={82}
             height={12}
@@ -27,54 +36,57 @@ const Case = () => {
             stroke={theme.colors.dark}
           />
           <DivMargin height='30px' />
-          <Title>
-            {textComponent.compSection.title[0]}
-          </Title>
-        </div>
+          <Text themeText={'sectionTitle'}>
+            <FormattedMessage id={'case.title'} />
+          </Text>
+        </Box>
         <Box
-          height={'410px'}
           width={'810px'}
-          background={theme.colors.white}
-          display={'flex'}
-          justifyContent={'center'}
-          alignItems={'center'}
+          height={'410px'}
+          background={theme.colors.beige}
+          border={`20px solid ${theme.colors.white}`}
         >
+          <DivMargin height='80px' />
           <Box
-            width={'770px'}
-            height={'370px'}
-            background={theme.colors.beige}
+            display={'flex'}
+            justifyContent={'space-around'}
           >
-            <DivMargin height='80px' />
-            <Box
-              display={'flex'}
-              justifyContent={'space-around'}
-            >
-              <WordSvg />
-              <ExcelSvg />
-              <PpSvg />
-              <AdobeSvg />
-            </Box>
-            <DivMargin height='107px' />
-            <Box
-              display={'flex'}
-              justifyContent={'space-around'}
-            >
-              <AmoCrmSvg />
-              <BitrixSvg />
-              <OnesSvg />
-            </Box>
+            <WordSvg />
+            <ExcelSvg />
+            <PpSvg />
+            <AdobeSvg />
+          </Box>
+          <DivMargin height='107px' />
+          <Box
+            display={'flex'}
+            justifyContent={'space-around'}
+          >
+            <AmoCrmSvg />
+            <BitrixSvg />
+            <OnesSvg />
           </Box>
         </Box>
-      </Box>
+      </BoxSection>
       <DivMargin height='50px' />
       <Box display={'flex'}>
         <DivMargin width='525px' />
-        <Text>
-          {textComponent.compSection.text[0]}
+        <Text
+          size={'18px'}
+          lineHeight={'25px'}
+          width={'495px'}
+        >
+          <FormattedMessage id={'case.descr'} />
         </Text>
       </Box>
-      <DivMargin height='145px' />
-    </Box>
+      <Box
+        width={'285px'}
+        height={'118px'}
+        backgroundImage={'url(\'site/ui/svg/Wave.svg\')'}
+        position={'relative'}
+        left={'105px'}
+        top={'55px'}
+      />
+    </Section>
   )
 }
 
