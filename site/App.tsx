@@ -1,16 +1,16 @@
 import React from 'react';
-import Hero from './Hero'
-import Automatization from './Automatization'
+import Hero from './sections/hero/Hero'
+import Automatization from './sections/Automatization'
 import { ThemeProvider } from 'emotion-theming'
-import theme from '../ui/theme/Theme'
-import { Bullets } from './Bullets'
-import Case from './Case'
-import Licenses from './Licenses'
-import Video from './Video'
-import Pointers from './Pointers'
-import Industry from './Industry'
-import { AppStyle } from '../ui/App'
-import Header from '../ui/header/Header'
+import theme from './ui/theme/Theme'
+import { Bullets } from './sections/Bullets'
+import Case from './sections/Case'
+import Licenses from './sections/Licenses'
+import Video from './sections/Video'
+import Pointers from './sections/Pointers'
+import Industry from './sections/Industry'
+import { AppStyle } from './ui/App'
+import Header from './sections/header/Header'
 
 
 class App extends React.Component {

@@ -1,11 +1,11 @@
 import styled from '@emotion/styled'
-import theme from '../theme/Theme'
-import Logo from '../svg/Logo'
-import { Button } from '../Button'
+import theme from '../../ui/theme/Theme'
+import Logo from '../../ui/svg/Logo'
+import { Button } from '../../ui/Button'
 import React from 'react'
-import DivMargin from '../layout/DivMargin'
 import { FormattedMessage } from 'react-intl'
-import { BoxSection } from '../layout/BoxSection'
+import { Box } from '../../ui/layout/Box2'
+import { Layout } from '../../ui/layout/Layout'
 
 
 const HeaderStyle = styled.header(()=>({
@@ -16,8 +16,8 @@ const HeaderStyle = styled.header(()=>({
 const Header = ()=>{
     return (
       <HeaderStyle>
-        <DivMargin height={'50px'} />
-        <BoxSection justifyContent={'space-between'}>
+        <Box height={'50px'} />
+        <Layout>
           <Logo />
           <Button
             bg={'transparent'}
@@ -25,7 +25,7 @@ const Header = ()=>{
           >
             <FormattedMessage id={'header.button'} />
           </Button>
-        </BoxSection>
+        </Layout>
       </HeaderStyle>
     )
 }
