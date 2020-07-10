@@ -9,6 +9,8 @@ font-size: ${prop('size', '20px')};
 line-height: ${prop('lineHeight', '30px')};
 font-family: ${prop('font', `${theme.fontFamilyText}`)};
 width: ${prop('width')};
+font-style: normal;
+font-weight: normal;
 ${switchProp('themeText', {
   h1: {
     color: theme.colors.whiteBlue,

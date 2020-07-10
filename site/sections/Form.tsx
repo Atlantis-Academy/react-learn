@@ -63,7 +63,7 @@ class Form extends React.Component<any, any> {
     return (
 
       <FormStyle>
-        <DivMargin height='30px' />
+        <DivMargin height='40px' />
         <FieldSetForm>
           <Legend><FormattedMessage id={'hero.form.name'} /></Legend>
           <InputForm
@@ -73,27 +73,7 @@ class Form extends React.Component<any, any> {
             onChange={this.handleInputNameChange}
           />
         </FieldSetForm>
-        <DivMargin height='8px' />
-        <FieldSetForm>
-          <Legend><FormattedMessage id={'hero.form.phone'} /></Legend>
-          <InputForm
-            type='text'
-            name='phone'
-            value={inputPhone}
-            onChange={this.handleInputPhoneChange}
-          />
-        </FieldSetForm>
-        <DivMargin height='8px' />
-        <FieldSetForm>
-          <Legend>Email</Legend>
-          <InputForm
-            type='text'
-            name='email'
-            value={inputEmail}
-            onChange={this.handleInputEmailChange}
-          />
-        </FieldSetForm>
-        <DivMargin height='8px' />
+        <DivMargin height='20px' />
         <FieldSetForm>
           <Legend><FormattedMessage id={'hero.form.job'} /></Legend>
           <InputForm
@@ -103,10 +83,31 @@ class Form extends React.Component<any, any> {
             onChange={this.handleInputJobChange}
           />
         </FieldSetForm>
-        <DivMargin height='8px' />
+        <DivMargin height='20px' />
+        <FieldSetForm>
+          <Legend><FormattedMessage id={'hero.form.phone'} /></Legend>
+          <InputForm
+            type='text'
+            name='phone'
+            value={inputPhone}
+            onChange={this.handleInputPhoneChange}
+          />
+        </FieldSetForm>
+        <DivMargin height='20px' />
+        <FieldSetForm>
+          <Legend>Email</Legend>
+          <InputForm
+            type='text'
+            name='email'
+            value={inputEmail}
+            onChange={this.handleInputEmailChange}
+          />
+        </FieldSetForm>
+        <DivMargin height='20px' />
         <Button
           padding={'15px 116px'}
           onClick={this.handleButton}
+          border={'none'}
         ><FormattedMessage id={'hero.form.button'} /></Button>
       </FormStyle>
 

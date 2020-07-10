@@ -6,7 +6,7 @@ import theme from './theme/Theme'
 
 export const Button: any = styled.button`
   padding: ${prop('padding', '15px 20px')};
-  border: 1px solid ${theme.colors.white};
+  border: ${prop('border', `1px solid ${theme.colors.white}`)};
   border-radius: 5px;
   color: ${theme.colors.white};
   background: ${prop('bg', `${theme.colors.whiteBlue}`)};

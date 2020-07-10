@@ -51,7 +51,7 @@ const HeroSection = () => {
           <WaveFormTop>
             <WaveFormBottom>
               <HeroForm>
-                <DivMargin height='30px' />
+                <DivMargin height='40px' />
                 <Text
                   size={'28px'}
                   color={theme.colors.white}

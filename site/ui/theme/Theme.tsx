@@ -38,6 +38,7 @@ const theme = {
     gray: '#DDDDDD',
     black: '#000000',
     beige: '#F2F2F2',
+    darkBeige: '#e6e6e6'
 
 
   },
