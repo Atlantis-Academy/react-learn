@@ -45,6 +45,7 @@ const Automatization = () => {
         <DivMargin width='210px' />
         <Box
           width={'495px'}
+          height={'370px'}
           background={theme.colors.dark}
           borderRadius={'10px'}
         >
