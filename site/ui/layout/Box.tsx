@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import {
   alignItems,
-  background, backgroundImage,
+  background, backgroundImage, backgroundPosition, backgroundRepeat, backgroundSize,
   border,
   borderRadius,
   display,
@@ -18,6 +18,9 @@ export const Box = styled.div(
   width,
   position,
   background,
+  backgroundSize,
+  backgroundRepeat,
+  backgroundPosition,
   margin,
   textAlign,
   alignItems,
