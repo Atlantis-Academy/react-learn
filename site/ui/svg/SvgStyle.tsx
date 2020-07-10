@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { PropsType } from '../theme/Theme'
+import { PropsType } from '../Types'
 
 
 export const SvgStyle = styled.svg`

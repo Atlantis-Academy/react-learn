@@ -25,5 +25,12 @@
   "bullets.cost.descr": "It adapts to the user, depending on the needs and direction and size of the company, you do not have to overpay for unused functions",
 
   "case.title": "Riverdoc compatibility with other systems",
-  "case.descr": "The system is compatible with office suites MS Office, Adobe Arcobat, 1C, Bitrix24, AmoCRM (and other SaaS), as well as with formats (Word, Excel, Powerpoint, Acrobat)"
+  "case.descr": "The system is compatible with office suites MS Office, Adobe Arcobat, 1C, Bitrix24, AmoCRM (and other SaaS), as well as with formats (Word, Excel, Powerpoint, Acrobat)",
+
+  "licenses.title": "Licenses, certificates and registries",
+  "licenses.descr1": "License of the Federal Service for Technical and Export Control",
+  "licenses.descr2": "Included in the 'Unified Register of Domestic Software'",
+  "licenses.descr3": "Certificate of the Federal Service for Export Control",
+  "licenses.descr4": "License of the Federal Service for Technical and Export Control in ...",
+  "licenses.descr5": "Certificate of the Federal Service for Export Control"
 }

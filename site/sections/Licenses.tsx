@@ -5,86 +5,100 @@ import { WavesL } from '../ui/svg/Wave'
 import { Box } from '../ui/layout/Box'
 import { ArrowLeft } from '../ui/ArrowLeft'
 import { ArrowRight } from '../ui/ArrowRight'
-import { SectionTitle } from '../ui/SectionTitle'
-import textComponent from '../ui/text/TextComponents'
-import { SvgStyle } from '../ui/svg/SvgStyle'
-import { LicenseSvg, LicenseSvg2, LicenseSvg3 } from '../ui/svg/License'
-import { Text } from '../ui/licenses/Text'
+import { Text } from '../ui/text/Text'
+import Section from '../ui/Section'
+import { FormattedMessage } from 'react-intl'
+import License1 from '../ui/licenses/License1'
+import License2 from '../ui/licenses/License2'
+import License3 from '../ui/licenses/License3'
+import License4 from '../ui/licenses/License4'
 
 
-const Licenses = ()=>{
-  return(
-    <section>
-      <DivMargin height='120px'/>
+const Licenses = () => {
+  return (
+    <Section bg={theme.colors.white}>
+      <DivMargin height='120px' />
       <Box textAlign={'center'}>
-        <WavesL width={80} height={10} stroke={theme.colors.dark}/>
-        <DivMargin height='30px'/>
+        <WavesL
+          width={80}
+          height={10}
+          stroke={theme.colors.dark}
+        />
+        <DivMargin height='30px' />
       </Box>
       <Box display={'flex'}>
-        <DivMargin width='105px'/>
-        <ArrowLeft/>
-        <DivMargin width='10px'/>
-        <ArrowRight/>
+        <DivMargin width='105px' />
+        <ArrowLeft />
+        <DivMargin width='10px' />
+        <ArrowRight />
         <DivMargin width='480px' />
-        <SectionTitle>
-          {textComponent.sectionTitleBlock[1]}
-        </SectionTitle>
+        <Text
+          themeText={'sectionTitle'}
+          width={'300px'}
+        >
+          <FormattedMessage id={'licenses.title'} />
+        </Text>
       </Box>
-      <DivMargin height='178px'/>
+      <DivMargin height='178px' />
       <Box display={'flex'}>
         <Box width={'250px'}>
-          <SvgStyle height='80px' width='50px'>
-            {LicenseSvg[0]}
-          </SvgStyle>
-          <DivMargin height='30px'/>
-          <Text>
-            {textComponent.licensesText[0]}
+          <License1 />
+          <DivMargin height='30px' />
+          <Text
+            size={'18px'}
+            lineHeight={'25px'}
+          >
+            <FormattedMessage id={'licenses.descr1'} />
           </Text>
         </Box>
-        <DivMargin width='65px'/>
+        <DivMargin width='65px' />
         <Box width={'250px'}>
-          <SvgStyle height='80px' width='50px'>
-            {LicenseSvg2}
-          </SvgStyle>
-          <DivMargin height='30px'/>
-          <Text>
-            {textComponent.licensesText[1]}
+          <License2 />
+          <DivMargin height='30px' />
+          <Text
+            size={'18px'}
+            lineHeight={'25px'}
+          >
+            <FormattedMessage id={'licenses.descr2'} />
           </Text>
         </Box>
-        <DivMargin width='65px'/>
+        <DivMargin width='65px' />
         <Box width={'250px'}>
-          <SvgStyle height='80px' width='50px'>
-            {LicenseSvg3}
-          </SvgStyle>
-          <DivMargin height='30px'/>
-          <Text>
-            {textComponent.licensesText[2]}
+          <License3 />
+          <DivMargin height='30px' />
+          <Text
+            size={'18px'}
+            lineHeight={'25px'}
+          >
+            <FormattedMessage id={'licenses.descr3'} />
           </Text>
         </Box>
-        <DivMargin width='65px'/>
+        <DivMargin width='65px' />
         <Box width={'250px'}>
-          <SvgStyle height='80px' width='50px'>
-            {LicenseSvg[0]}
-          </SvgStyle>
-          <DivMargin height='30px'/>
-          <Text>
-            {textComponent.licensesText[3]}
+          <License4 />
+          <DivMargin height='30px' />
+          <Text
+            size={'18px'}
+            lineHeight={'25px'}
+          >
+            <FormattedMessage id={'licenses.descr4'} />
           </Text>
         </Box>
-        <DivMargin width='65px'/>
+        <DivMargin width='65px' />
         <Box width={'250px'}>
-          <SvgStyle height='80px' width='50px'>
-            {LicenseSvg[0]}
-          </SvgStyle>
-          <DivMargin height='30px'/>
-          <Text>
-            {textComponent.licensesText[3]}
+          <License3 />
+          <DivMargin height='30px' />
+          <Text
+            size={'18px'}
+            lineHeight={'25px'}
+          >
+            <FormattedMessage id={'licenses.descr5'} />
           </Text>
         </Box>
       </Box>
-      <DivMargin height='210px'/>
+      <DivMargin height='210px' />
 
-    </section>
+    </Section>
   )
 }
 
