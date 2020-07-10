@@ -7,7 +7,7 @@ export const WaveFormBottom = styled.div(() => ({
   justifyContent: 'center',
   alignItems: 'center',
   backgroundImage: `url('site/ui/svg/Wave.svg');`,
-  backgroundSize: '197px',
+  backgroundSize: '285px 197px',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'bottom left'
 }))

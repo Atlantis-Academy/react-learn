@@ -6,5 +6,6 @@ export const HeroForm = styled.div<any>(({theme}) => ({
   background: theme.colors.dark,
   display: 'flex',
   alignItems: 'center',
-  flexDirection: 'column'
+  flexDirection: 'column',
+  borderRadius: '10px'
 }))
