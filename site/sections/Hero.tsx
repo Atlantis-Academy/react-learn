@@ -19,8 +19,9 @@ const HeroSection = () => {
     <Section>
       <BoxSection
         alignItems={'center'}
+        justifyContent={'space-between'}
       >
-        <Box maxWidth='600px'>
+        <Box maxWidth='510px'>
           <h1>
             <Text themeText='h1'>
               <FormattedMessage id={'hero.title'} />
@@ -67,7 +68,7 @@ const HeroSection = () => {
           </WaveFormTop>
         </HeroFormBlock>
       </BoxSection>
-      <DivMargin height='110px' />
+      <DivMargin height='28px' />
     </Section>
   )
 }
