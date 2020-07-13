@@ -1,14 +1,14 @@
 import { Text } from '../../../ui/text/Text'
 import theme from '../../../ui/theme/Theme'
-import { FormattedMessage } from 'react-intl'
-import Form from '../../Form'
+import { injectIntl } from 'react-intl'
+import Form from './Form'
 import { HeroForm } from '../../../ui/hero/HeroForm'
 import React from 'react'
 import { Box } from '../../../ui/layout/Box2'
+import messages from '../../../ui/text/Messages'
 
-
-export const FormBlock = ()=>{
-  return(
+const FormBlock = ({intl}: any) => {
+  return (
     <HeroForm>
       <Box height='40px' />
       <Text
@@ -17,10 +17,12 @@ export const FormBlock = ()=>{
         lineHeight={'30px'}
         font={theme.fontFamilyTitle}
       >
-        <FormattedMessage id={'hero.form.title'} />
+        {intl.formatMessage(messages.hero.formTitle)}
       </Text>
       <Form />
       <Box height='30px' />
     </HeroForm>
   )
 }
+
+export default injectIntl(FormBlock)

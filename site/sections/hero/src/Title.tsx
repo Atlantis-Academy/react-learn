@@ -1,12 +1,15 @@
-import { FormattedMessage } from 'react-intl'
 import { Text } from '../../../ui/text/Text'
 import React from 'react'
+import messages from '../../../ui/text/Messages'
+import { injectIntl } from 'react-intl'
 
 
-export const Title = ()=>{
-  return(
+const Title = ({intl}: any) => {
+  return (
     <Text themeText='h1'>
-      <FormattedMessage id={'hero.title'} />
+      {intl.formatMessage(messages.hero.title)}
     </Text>
   )
 }
+
+export default injectIntl(Title)
