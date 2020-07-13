@@ -14,5 +14,4 @@ background-size: ${prop('bgS')};
 background-repeat: ${prop('bgR')};
 background-position: ${prop('bgP')};
 border: ${prop('border')};
-width: 100%;
-`
+width: 100%;`
