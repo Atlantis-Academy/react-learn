@@ -34,7 +34,7 @@ export default defineMessages({
       },
       email: {
         id: 'form.email',
-        defaultMessage: 'email'
+        defaultMessage: 'Email'
       },
       job: {
         id: 'form.job',
