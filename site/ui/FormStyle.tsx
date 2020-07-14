@@ -8,7 +8,7 @@ export const FormStyle = styled.form(() => ({
 
 
 export const InputForm = styled.input(() => ({
-  width: '310px',
+  width: '300px',
   height: '30px',
   background: theme.colors.dark,
   border: 'none',
@@ -16,7 +16,7 @@ export const InputForm = styled.input(() => ({
   outline: 'none',
 }))
 
-export const FieldSetForm = styled.fieldset(() => ({
+export const BorderInput = styled.div(() => ({
   border: `1px solid ${theme.colors.whiteBlue}`,
   borderRadius: '5px',
   padding: '2px',
@@ -24,7 +24,10 @@ export const FieldSetForm = styled.fieldset(() => ({
   height: '58px'
 }))
 
-export const Legend = styled.legend(() => ({
+export const InputText = styled.span(() => ({
+  position: 'relative',
+  background: theme.colors.dark,
+  top: '8px',
   overflow: 'hidden',
   borderColor: 'inherit',
   color: theme.colors.white,
