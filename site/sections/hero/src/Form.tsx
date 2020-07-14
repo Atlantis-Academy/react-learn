@@ -1,48 +1,109 @@
-import React from 'react'
-import { BorderInput, FormStyle, InputForm, InputText } from '../../../ui/FormStyle'
+import React, { useEffect, useState } from 'react'
+import { BorderInput, FormStyle, InputForm, InputText, InputTextBox } from '../../../ui/FormStyle'
 import { injectIntl } from 'react-intl'
 import { Button } from '../../../ui/Button'
-import messages from '../../../ui/text/Messages'
+import messages from './Messages'
 import { Box } from '../../../ui/layout/Box2'
+import { Text } from '../../../ui/text/Text'
+import theme from '../../../ui/theme/Theme'
+import fontSize from '../../../ui/theme/FontSize'
 
-//todo: add state
 
 const Form = ({intl}: any) => {
 
+  const [name, setName] = useState("")
+  const [job, setJob] = useState("")
+  const [phone, setPhone] = useState("")
+  const [email, setEmail] = useState("")
+  const [end, setEnd] = useState('')
+
+  const handleForm = (event: any) => {
+    event.preventDefault()
+
+    setName('')
+    setJob('')
+    setPhone('')
+    setEmail('')
+
+    if (name && job && phone && email) {
+      setEnd(`${intl.formatMessage(messages.hero.form.formEnd)}`)
+
+      console.log(name, job, phone, email)
+
+    } else {
+      setEnd(`${intl.formatMessage(messages.hero.form.formError)}`)
+    }
+  }
+
+  useEffect(() => {
+    const timeOut = setTimeout(() => {
+      setEnd('')
+    }, 3000)
+    return () => clearTimeout(timeOut)
+  }, [end])
+
   return (
 
-    <FormStyle>
-      <Box height='40px' />
-      <InputText>{intl.formatMessage(messages.hero.form.name)}</InputText>
+    <FormStyle
+      onSubmit={handleForm}
+    >
+      <Box
+        display={'flex'}
+        justify={'center'}
+        alignItems={'center'}
+        width={'320px'}
+        height='40px'
+      >
+        <Text
+          size={fontSize.xs}
+          color={theme.colors.white}
+        >{end}</Text>
+      </Box>
+      <InputTextBox>
+        <InputText>{intl.formatMessage(messages.hero.form.name)}</InputText>
+      </InputTextBox>
       <BorderInput>
         <InputForm
           type='text'
           name='name'
+          onChange={event => setName(event.target.value)}
+          value={name}
         />
       </BorderInput>
       <Box height='20px' />
-      <InputText>{intl.formatMessage(messages.hero.form.job)}</InputText>
+      <InputTextBox>
+        <InputText>{intl.formatMessage(messages.hero.form.job)}</InputText>
+      </InputTextBox>
       <BorderInput>
         <InputForm
           type='text'
           name='job'
+          onChange={event => setJob(event.target.value)}
+          value={job}
         />
       </BorderInput>
       <Box height='20px' />
-      <InputText>{intl.formatMessage(messages.hero.form.phone)}</InputText>
+      <InputTextBox>
+        <InputText>{intl.formatMessage(messages.hero.form.phone)}</InputText>
+      </InputTextBox>
       <BorderInput>
         <InputForm
           type='text'
           name='phone'
+          onChange={event => setPhone(event.target.value)}
+          value={phone}
         />
       </BorderInput>
       <Box height='20px' />
-      <InputText>{intl.formatMessage(messages.hero.form.email)}</InputText>
+      <InputTextBox>
+        <InputText>{intl.formatMessage(messages.hero.form.email)}</InputText>
+      </InputTextBox>
       <BorderInput>
         <InputForm
           type='text'
           name='email'
-
+          onChange={event => setEmail(event.target.value)}
+          value={email}
         />
       </BorderInput>
       <Box height='20px' />
@@ -54,6 +115,5 @@ const Form = ({intl}: any) => {
 
   )
 }
-
 
 export default injectIntl(Form)

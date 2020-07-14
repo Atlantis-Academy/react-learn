@@ -1,6 +1,6 @@
 import { Text } from '../../../ui/text/Text'
 import React from 'react'
-import messages from '../../../ui/text/Messages'
+import messages from './Messages'
 import { injectIntl } from 'react-intl'
 
 

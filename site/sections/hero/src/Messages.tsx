@@ -43,6 +43,14 @@ export default defineMessages({
       phone: {
         id: 'form.phone',
         defaultMessage: 'Телефон'
+      },
+      formEnd: {
+        id: 'form.end',
+        defaultMessage: `Спасибо! Мы скоро с вами свяжемся!`
+      },
+      formError: {
+        id: 'form.error',
+        defaultMessage: 'Необходимо заполнить поля формы!'
       }
     }
   }

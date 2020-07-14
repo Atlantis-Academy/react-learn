@@ -50,6 +50,9 @@ const theme = {
   tabsRadius: {
     left: '20px 0px 0px 20px',
     right: '0px 20px 20px 0px'
+  },
+  border: {
+    s: '1px solid'
   }
 }
 

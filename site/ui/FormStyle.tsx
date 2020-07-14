@@ -1,37 +1,55 @@
 import styled from '@emotion/styled'
 import theme from './theme/Theme'
+import fontSize from './theme/FontSize'
+import borderRadius from './theme/BorderRadius'
 
 
 export const FormStyle = styled.form(() => ({
-  '&:focus': {outline: 'none'}
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  '&:focus': {outline: 'none'},
 }))
 
 
 export const InputForm = styled.input(() => ({
   width: '300px',
-  height: '30px',
+  height: '50px',
   background: theme.colors.dark,
   border: 'none',
   overflow: 'hidden',
   outline: 'none',
+  color: theme.colors.white,
+  fontFamily: theme.fontFamilyText,
+  fontSize: fontSize.xs,
 }))
 
 export const BorderInput = styled.div(() => ({
-  border: `1px solid ${theme.colors.whiteBlue}`,
-  borderRadius: '5px',
+  border: `${theme.border.s} ${theme.colors.whiteBlue}`,
+  borderRadius: borderRadius.s,
   padding: '2px',
   width: '310px',
-  height: '58px'
+  height: '58px',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center'
 }))
 
 export const InputText = styled.span(() => ({
-  position: 'relative',
   background: theme.colors.dark,
-  top: '8px',
   overflow: 'hidden',
   borderColor: 'inherit',
   color: theme.colors.white,
   fontFamily: theme.fontFamilyText,
-  fontSze: '16px',
-  marginLeft: '10px',
+  fontSize: fontSize.xs,
+  width: 'fit-content'
+}))
+
+export const InputTextBox = styled.div(()=>({
+  position: 'relative',
+  top: '8px',
+  left: '8px',
+  width: '100%',
+  marginLeft: '10px'
 }))

@@ -5,16 +5,16 @@ import Form from './Form'
 import { HeroForm } from '../../../ui/hero/HeroForm'
 import React from 'react'
 import { Box } from '../../../ui/layout/Box2'
-import messages from '../../../ui/text/Messages'
+import messages from './Messages'
+import fontSize from '../../../ui/theme/FontSize'
 
 const FormBlock = ({intl}: any) => {
   return (
     <HeroForm>
       <Box height='40px' />
       <Text
-        size={'28px'}
+        size={fontSize.ml}
         color={theme.colors.white}
-        lineHeight={'30px'}
         font={theme.fontFamilyTitle}
       >
         {intl.formatMessage(messages.hero.formTitle)}
