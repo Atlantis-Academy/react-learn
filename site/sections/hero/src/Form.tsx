@@ -35,16 +35,18 @@ const Form = ({intl}: any) => {
     }
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     const timeOut = setTimeout(() => {
       setEnd('')
     }, 3000)
-    return ()=> clearTimeout(timeOut)
+    return () => clearTimeout(timeOut)
   }, [end])
 
   return (
 
-    <FormStyle  onSubmit={handleForm}>
+    <FormStyle
+      onSubmit={handleForm}
+    >
       <Box
         display={'flex'}
         justify={'center'}
@@ -113,6 +115,5 @@ const Form = ({intl}: any) => {
 
   )
 }
-
 
 export default injectIntl(Form)
