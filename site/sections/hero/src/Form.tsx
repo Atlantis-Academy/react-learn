@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { BorderInput, FormStyle, InputForm, InputText, InputTextBox } from '../../../ui/FormStyle'
 import { injectIntl } from 'react-intl'
 import { Button } from '../../../ui/Button'
@@ -8,7 +8,6 @@ import { Text } from '../../../ui/text/Text'
 import theme from '../../../ui/theme/Theme'
 import fontSize from '../../../ui/theme/FontSize'
 
-//todo: add state
 
 const Form = ({intl}: any) => {
 
@@ -21,27 +20,31 @@ const Form = ({intl}: any) => {
   const handleForm = (event: any) => {
     event.preventDefault()
 
-    console.log(name, job, phone, email)
-
     setName('')
     setJob('')
     setPhone('')
     setEmail('')
+
     if (name && job && phone && email) {
       setEnd(`${intl.formatMessage(messages.hero.form.formEnd)}`)
+
+      console.log(name, job, phone, email)
+
     } else {
       setEnd(`${intl.formatMessage(messages.hero.form.formError)}`)
     }
-    setTimeout(() => {
-      setEnd('')
-    }, 3000)
-
   }
 
+  useEffect(()=>{
+    const timeOut = setTimeout(() => {
+      setEnd('')
+    }, 3000)
+    return ()=> clearTimeout(timeOut)
+  }, [end])
 
   return (
 
-    <FormStyle onSubmit={handleForm}>
+    <FormStyle  onSubmit={handleForm}>
       <Box
         display={'flex'}
         justify={'center'}
