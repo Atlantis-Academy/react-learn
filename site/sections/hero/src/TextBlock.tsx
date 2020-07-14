@@ -6,8 +6,9 @@ import React from 'react'
 import Title from './Title'
 import SubTitle from './SubTitle'
 import { TitleH1, TitleH2 } from '../../../ui/theme/Titles'
-import messages from '../../../ui/text/Messages'
+import messages from './Messages'
 import { injectIntl } from 'react-intl'
+import fontSize from '../../../ui/theme/FontSize'
 
 
 const TextBlock = ({intl}: any) => {
@@ -27,7 +28,7 @@ const TextBlock = ({intl}: any) => {
       <Box height='30px' />
       <Text
         color={theme.colors.white}
-        size={'22px'}
+        size={fontSize.m}
       >
         {intl.formatMessage(messages.hero.text)}
       </Text>

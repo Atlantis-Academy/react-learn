@@ -6,7 +6,7 @@ import React from 'react'
 import { Box } from '../../ui/layout/Box2'
 import { Layout } from '../../ui/layout/Layout'
 import { injectIntl } from 'react-intl'
-import messages from '../../ui/text/Messages'
+import messages from '../hero/src/Messages'
 
 
 const HeaderStyle = styled.header(()=>({

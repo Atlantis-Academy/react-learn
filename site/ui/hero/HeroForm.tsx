@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import borderRadius from '../theme/BorderRadius'
 
 
 export const HeroForm = styled.div<any>(({theme}) => ({
@@ -7,5 +8,5 @@ export const HeroForm = styled.div<any>(({theme}) => ({
   display: 'flex',
   alignItems: 'center',
   flexDirection: 'column',
-  borderRadius: '10px'
+  borderRadius: borderRadius.m
 }))

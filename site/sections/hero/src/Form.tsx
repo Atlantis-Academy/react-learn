@@ -1,21 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BorderInput, FormStyle, InputForm, InputText, InputTextBox } from '../../../ui/FormStyle'
 import { injectIntl } from 'react-intl'
 import { Button } from '../../../ui/Button'
-import messages from '../../../ui/text/Messages'
+import messages from './Messages'
 import { Box } from '../../../ui/layout/Box2'
 import { Text } from '../../../ui/text/Text'
 import theme from '../../../ui/theme/Theme'
+import fontSize from '../../../ui/theme/FontSize'
 
 //todo: add state
 
 const Form = ({intl}: any) => {
 
-  const [name, setName] = React.useState("")
-  const [job, setJob] = React.useState("")
-  const [phone, setPhone] = React.useState("")
-  const [email, setEmail] = React.useState("")
-  const [end, setEnd]=React.useState('')
+  const [name, setName] = useState("")
+  const [job, setJob] = useState("")
+  const [phone, setPhone] = useState("")
+  const [email, setEmail] = useState("")
+  const [end, setEnd] = useState('')
 
   const handleForm = (event: any) => {
     event.preventDefault()
@@ -26,12 +27,12 @@ const Form = ({intl}: any) => {
     setJob('')
     setPhone('')
     setEmail('')
-    if(name && job && phone && email){
-      setEnd(`Спасибо, ${name}! Мы скоро с вами свяжемся!`)
+    if (name && job && phone && email) {
+      setEnd(`${intl.formatMessage(messages.hero.form.formEnd)}`)
     } else {
-      setEnd('Необходимо заполнить поля формы!')
+      setEnd(`${intl.formatMessage(messages.hero.form.formError)}`)
     }
-    setTimeout(()=>{
+    setTimeout(() => {
       setEnd('')
     }, 3000)
 
@@ -46,9 +47,10 @@ const Form = ({intl}: any) => {
         justify={'center'}
         alignItems={'center'}
         width={'320px'}
-        height='40px'>
+        height='40px'
+      >
         <Text
-          size={'16px'}
+          size={fontSize.xs}
           color={theme.colors.white}
         >{end}</Text>
       </Box>

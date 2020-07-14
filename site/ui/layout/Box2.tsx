@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { prop } from 'styled-tools'
-
+//todo: rename Box2
 
 export const Box: any = styled.div`
 max-width: ${prop('width')};
@@ -15,5 +15,4 @@ background-repeat: ${prop('bgR')};
 background-position: ${prop('bgP')};
 border: ${prop('border')};
 width: 100%;
-flex-wrap: wrap;
-text-align: center;`
+flex-wrap: wrap;`
