@@ -1,54 +1,61 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { BorderInput, FormStyle, InputForm, InputText, InputTextBox } from '../../../ui/FormStyle'
 import { injectIntl } from 'react-intl'
 import { Button } from '../../../ui/Button'
-import messages from '../../../ui/text/Messages'
+import messages from './Messages'
 import { Box } from '../../../ui/layout/Box2'
 import { Text } from '../../../ui/text/Text'
 import theme from '../../../ui/theme/Theme'
+import fontSize from '../../../ui/theme/FontSize'
 
-//todo: add state
 
 const Form = ({intl}: any) => {
 
-  const [name, setName] = React.useState("")
-  const [job, setJob] = React.useState("")
-  const [phone, setPhone] = React.useState("")
-  const [email, setEmail] = React.useState("")
-  const [end, setEnd]=React.useState('')
+  const [name, setName] = useState("")
+  const [job, setJob] = useState("")
+  const [phone, setPhone] = useState("")
+  const [email, setEmail] = useState("")
+  const [end, setEnd] = useState('')
 
   const handleForm = (event: any) => {
     event.preventDefault()
-
-    console.log(name, job, phone, email)
 
     setName('')
     setJob('')
     setPhone('')
     setEmail('')
-    if(name && job && phone && email){
-      setEnd(`Спасибо, ${name}! Мы скоро с вами свяжемся!`)
-    } else {
-      setEnd('Необходимо заполнить поля формы!')
-    }
-    setTimeout(()=>{
-      setEnd('')
-    }, 3000)
 
+    if (name && job && phone && email) {
+      setEnd(`${intl.formatMessage(messages.hero.form.formEnd)}`)
+
+      console.log(name, job, phone, email)
+
+    } else {
+      setEnd(`${intl.formatMessage(messages.hero.form.formError)}`)
+    }
   }
 
+  useEffect(() => {
+    const timeOut = setTimeout(() => {
+      setEnd('')
+    }, 3000)
+    return () => clearTimeout(timeOut)
+  }, [end])
 
   return (
 
-    <FormStyle onSubmit={handleForm}>
+    <FormStyle
+      onSubmit={handleForm}
+    >
       <Box
         display={'flex'}
         justify={'center'}
         alignItems={'center'}
         width={'320px'}
-        height='40px'>
+        height='40px'
+      >
         <Text
-          size={'16px'}
+          size={fontSize.xs}
           color={theme.colors.white}
         >{end}</Text>
       </Box>
@@ -108,6 +115,5 @@ const Form = ({intl}: any) => {
 
   )
 }
-
 
 export default injectIntl(Form)
