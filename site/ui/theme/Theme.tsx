@@ -25,8 +25,7 @@ injectGlobal`
       local('BloggerSans-Bold'),
       url('./site/ui/theme/fonts/BloggerSans-Bold.woff2')
         format('woff2');
-  }
- `
+  }`
 
 export const colors: any = {
     colorDark: '#0F2B3D',
@@ -39,12 +38,11 @@ export const colors: any = {
     beige: '#F2F2F2',
     darkBeige: '#e6e6e6',
   width: '1440px',
-
 }
 
 export const fontFamily = {
-  text: 'Proxima Nova',
-  title: 'Blogger Sans',
+  text: '"Proxima Nova", , sans-serif',
+  title: '"Blogger Sans", , sans-serif',
 }
 
 export const tabsRadius: TabsRadius = {
@@ -55,8 +53,3 @@ export const tabsRadius: TabsRadius = {
 export const border: Border = {
   s: '1px solid'
 }
-
-
-
-
-

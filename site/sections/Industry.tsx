@@ -19,6 +19,7 @@ import {
 import { Text } from '../ui/industry/Text'
 import { theme } from '../ui/theme'
 
+//todo: change icon & delete divMargin
 
 const Industry = () => {
   return (
