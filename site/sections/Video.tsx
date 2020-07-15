@@ -2,7 +2,6 @@ import React from 'react'
 import DivMargin from '../ui/layout/DivMargin'
 import { WavesL } from '../ui/svg/Wave'
 import { Box } from '../ui/layout/Box'
-import theme from '../ui/theme/Theme'
 import { ArrowLeft } from '../ui/ArrowLeft'
 import { ArrowRight } from '../ui/ArrowRight'
 import Section from '../ui/Section'
@@ -10,6 +9,7 @@ import { BoxSection } from '../ui/layout/BoxSection'
 import { Text } from '../ui/text/Text'
 import { FormattedMessage } from 'react-intl'
 import VideoBox from '../ui/video/VideoBox'
+import { theme } from '../ui/theme'
 
 const Video = () => {
   return (

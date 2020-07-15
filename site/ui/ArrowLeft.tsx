@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import React from 'react'
-import theme from './theme/Theme'
+import { theme } from './theme'
 
 
 export const ArrowLeftStyle = styled.div(() => ({

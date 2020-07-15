@@ -2,16 +2,17 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { BoxSection } from './layout/BoxSection'
 import { FormattedMessage } from 'react-intl'
+import { theme } from './theme'
 
 
-const LeftTab = styled.div<any>(({theme}) => ({
+const LeftTab = styled.div(() => ({
   width: '200px',
   height: '40px',
   background: theme.colors.colorDark,
   borderRadius: theme.tabsRadius.left,
-  fontFamily: theme.fontFamilyText,
+  fontFamily: theme.fontFamily.text,
   fontWeight: 600,
-  fontSize: `${theme.fontSize[0]}px`,
+  fontSize: `${theme.fontSize.xs}`,
   lineHeight: '20px',
   textAlign: 'center',
   color: theme.colors.white,
@@ -21,7 +22,7 @@ const LeftTab = styled.div<any>(({theme}) => ({
   cursor: 'pointer',
 }))
 
-const RightTab = styled(LeftTab)<any>(({theme}) => ({
+const RightTab = styled(LeftTab)(() => ({
   borderRadius: theme.tabsRadius.right,
   border: `1px solid ${theme.colors.gray}`,
   background: theme.colors.white,

@@ -1,6 +1,5 @@
 import React from 'react'
 import DivMargin from '../ui/layout/DivMargin'
-import theme from '../ui/theme/Theme'
 import { Box } from '../ui/layout/Box'
 import { WavesL } from '../ui/svg/Wave'
 import { Text } from '../ui/text/Text'
@@ -8,6 +7,7 @@ import { AdobeSvg, AmoCrmSvg, BitrixSvg, ExcelSvg, OnesSvg, PpSvg, WordSvg } fro
 import Section from '../ui/Section'
 import { BoxSection } from '../ui/layout/BoxSection'
 import { FormattedMessage } from 'react-intl'
+import { theme } from '../ui/theme'
 
 
 const Case = () => {

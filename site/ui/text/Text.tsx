@@ -1,32 +1,31 @@
 import styled from 'styled-components'
 import { prop, switchProp } from 'styled-tools'
-import theme from '../theme/Theme'
-import fontSize from '../theme/FontSize'
-import lineHeight from '../theme/LineHeight'
+import { theme } from '../theme'
+
 
 
 export const Text: any = styled.span`
 color: ${prop('color', `${theme.colors.dark}`)};
-font-size: ${prop('size', `${fontSize.m}`)};
-line-height: ${prop('lineHeight', `${lineHeight.xs}`)};
-font-family: ${prop('font', `${theme.fontFamilyText}`)};
+font-size: ${prop('size', `${theme.fontSize.m}`)};
+line-height: ${prop('lineHeight', `${theme.lineHeight.xs}`)};
+font-family: ${prop('font', `${theme.fontFamily.text}`)};
 width: ${prop('width')};
 ${switchProp('themeText', {
   h1: {
     color: theme.colors.whiteBlue,
-    fontFamily: theme.fontFamilyTitle,
+    fontFamily: theme.fontFamily.title,
     fontWeight: 'bold',
-    fontSize: fontSize.xxl,
+    fontSize: theme.fontSize.xxl,
   },
   h2: {
-    fontFamily: theme.fontFamilyTitle,
-    fontSize: fontSize.l,
-    lineHeight: lineHeight.l,
+    fontFamily: theme.fontFamily.title,
+    fontSize: theme.fontSize.l,
+    lineHeight: theme.lineHeight.l,
   },
   sectionTitle: {
-    fontFamily: theme.fontFamilyTitle,
-    fontSize: fontSize.l,
-    lineHeight: lineHeight.l,
+    fontFamily: theme.fontFamily.title,
+    fontSize: theme.fontSize.l,
+    lineHeight: theme.lineHeight.l,
     color: theme.colors.dark
   }
 })}

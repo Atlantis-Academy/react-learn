@@ -1,4 +1,5 @@
 import { injectGlobal } from 'emotion'
+import { Border, TabsRadius } from './Types'
 
 
 injectGlobal`
@@ -27,9 +28,7 @@ injectGlobal`
   }
  `
 
-
-const theme = {
-  colors: {
+export const colors: any = {
     colorDark: '#0F2B3D',
     white: '#FFFFFF',
     darkBlue: '#0A4759',
@@ -38,22 +37,26 @@ const theme = {
     gray: '#DDDDDD',
     black: '#000000',
     beige: '#F2F2F2',
-    darkBeige: '#e6e6e6'
-
-
-  },
+    darkBeige: '#e6e6e6',
   width: '1440px',
-  fontFamilyText: 'Proxima Nova',
-  fontFamilyTitle: 'Blogger Sans',
-  fontSize: [16, 40, 22],
-  lineHeight: [45],
-  tabsRadius: {
-    left: '20px 0px 0px 20px',
-    right: '0px 20px 20px 0px'
-  },
-  border: {
-    s: '1px solid'
-  }
+
 }
 
-export default theme;
+export const fontFamily = {
+  text: 'Proxima Nova',
+  title: 'Blogger Sans',
+}
+
+export const tabsRadius: TabsRadius = {
+  left: '20px 0px 0px 20px',
+  right: '0px 20px 20px 0px'
+}
+
+export const border: Border = {
+  s: '1px solid'
+}
+
+
+
+
+

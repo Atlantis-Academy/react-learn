@@ -1,8 +1,8 @@
-import theme from '../../../ui/theme/Theme'
 import { Text } from '../../../ui/text/Text'
 import React from 'react'
 import messages from './Messages'
 import { injectIntl } from 'react-intl'
+import { theme } from '../../../ui/theme'
 
 const SubTitle = ({intl}: any) => {
   return (

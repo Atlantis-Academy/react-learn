@@ -1,13 +1,13 @@
 import React from 'react'
 import DivMargin from '../ui/layout/DivMargin'
 import { WavesL } from '../ui/svg/Wave'
-import theme from '../ui/theme/Theme'
 import { Box } from '../ui/layout/Box'
 import { ArrowLeft } from '../ui/ArrowLeft'
 import { ArrowRight } from '../ui/ArrowRight'
 import { FormattedMessage } from 'react-intl'
 import { Text } from '../ui/text/Text'
 import { Button } from '../ui/Button'
+import { theme } from '../ui/theme'
 
 
 const Automatization = () => {

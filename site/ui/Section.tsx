@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { prop } from 'styled-tools'
-import theme from './theme/Theme'
+import { theme } from './theme'
+
 
 
 const Section: any = styled.section`

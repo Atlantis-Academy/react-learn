@@ -1,12 +1,12 @@
 import styled from '@emotion/styled'
-import borderRadius from '../theme/BorderRadius'
+import { theme } from '../theme'
 
 
-export const HeroForm = styled.div<any>(({theme}) => ({
+export const HeroForm = styled.div<any>(() => ({
   width: '390px',
   background: theme.colors.dark,
   display: 'flex',
   alignItems: 'center',
   flexDirection: 'column',
-  borderRadius: borderRadius.m
+  borderRadius: theme.borderRadius.m
 }))
