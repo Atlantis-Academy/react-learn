@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from './sections/hero/Hero'
-import Automatization from './sections/Automatization'
+import Automatization from './sections/automatization/Automatization'
 import { ThemeProvider } from 'emotion-theming'
 import { Bullets } from './sections/Bullets'
 import Case from './sections/Case'
