@@ -41,4 +41,9 @@ injectGlobal`
       local('BloggerSans-Bold'),
       url('./site/ui/theme/fonts/BloggerSans-Bold.woff2')
         format('woff2');
-  }`
+  }
+  img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+      }`

@@ -2,9 +2,10 @@ import React from 'react'
 import { ArrowStyle } from './ArrowLeft'
 
 
-const ArrowRight = ({slideBlock}: any) => {
+const ArrowRight = ({sliderShow, state}: any) => {
+  console.log(state)
   return (
-    <ArrowStyle onClick={slideBlock}>
+    <ArrowStyle disabled={''} data-direction={'next'} onClick={sliderShow}>
       <svg
         width={31}
         height={28}

@@ -8,7 +8,6 @@ import messages from './Messages'
 
 
 const Slider = ({intl, state}: any) => {
-
   return (
     <Box
       display={'flex'}
@@ -16,25 +15,29 @@ const Slider = ({intl, state}: any) => {
       width={'1018px'}
       justify={'start'}
     >
-      {state.showSlide ?
-        <Box
-          width={'495px'}
-          height={'370px'}
-          bg={theme.colors.dark}
-          borderRadius={theme.borderRadius.m}
-          margin={0}
-        >
-        </Box> :
-        <Box
-          width={'495px'}
-          height={'370px'}
-          bg={theme.colors.whiteBlue}
-          borderRadius={theme.borderRadius.m}
-          margin={0}
-        >
-        </Box>}
-      <Box width={'30px'} margin={0} />
-      <Box width={'390px'} margin={0}>
+      <Box
+        width={'495px'}
+        height={'370px'}
+        bg={theme.colors.dark}
+        borderRadius={theme.borderRadius.m}
+        margin={0}
+        display={'flex'}
+        justify={'center'}
+        alignItems={'center'}
+      >
+        <img
+          src={state.img[state.imgIndex]}
+          alt=''
+        />
+      </Box>
+      <Box
+        width={'30px'}
+        margin={0}
+      />
+      <Box
+        width={'390px'}
+        margin={0}
+      >
         <Box>
           <Text size={theme.fontSize.s}>
             {intl.formatMessage(messages.text)}
@@ -46,14 +49,7 @@ const Slider = ({intl, state}: any) => {
           {intl.formatMessage(messages.button)}
         </Button>
       </Box>
-      <Box
-        width={'285px'}
-        height={'118px'}
-        bgI={'url(\'site/ui/svg/Wave.svg\')'}
-        position={'absolute'}
-        left={'-105px'}
-        top={'315px'}
-      />
+
     </Box>
   )
 }
