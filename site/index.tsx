@@ -14,7 +14,6 @@ if(local === 'en'){
   lang = Ru
 }
 
-
 ReactDOM.render(
   <IntlProvider
     locale={local}
