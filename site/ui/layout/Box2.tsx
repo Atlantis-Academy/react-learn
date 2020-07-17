@@ -18,8 +18,9 @@ position: ${prop('position')};
 left: ${prop('left')};
 top: ${prop('top')};
 border-radius: ${prop('borderRadius')};
-margin: ${prop('margin', '0 auto')};
+margin: ${prop('margin')};
 z-index: ${prop('zIndex')};
-width: ${prop('width100','100%')};
-flex-wrap: ${prop('wrap', 'wrap')};
-overflow: ${prop('overflow', 'hidden;')}`
+width: ${prop('width100')};
+height: ${prop('height100')};
+flex-wrap: ${prop('wrap')};
+overflow: ${prop('overflow')}`

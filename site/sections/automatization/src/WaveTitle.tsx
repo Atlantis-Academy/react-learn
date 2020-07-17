@@ -1,4 +1,4 @@
-import { WavesL } from '../../../ui/svg/Wave'
+import { WavesL } from '../../../ui/icon/Wave'
 import { theme } from '../../../ui/theme'
 import { Box } from '../../../ui/layout/Box2'
 import React from 'react'

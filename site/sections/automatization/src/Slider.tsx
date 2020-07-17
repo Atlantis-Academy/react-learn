@@ -5,7 +5,6 @@ import { injectIntl } from 'react-intl'
 import { Button } from '../../../ui/Button'
 import React from 'react'
 import messages from './Messages'
-import { SliderStyle } from '../../../ui/auto/Slider'
 import { SliderContent } from '../../../ui/auto/SliderContent'
 
 const Slider = ({intl, state, slide}: any) => {
@@ -14,9 +13,9 @@ const Slider = ({intl, state, slide}: any) => {
       display={'flex'}
       position={'relative'}
       justify={'start'}
-      margin={0}
+      overflow={'hidden'}
     >
-      <SliderStyle>
+      <Box display={'flex'}>
         {
           slide.map((item: any, index: number) => {
             return (
@@ -26,15 +25,16 @@ const Slider = ({intl, state, slide}: any) => {
               >
                 <Box
                   width={'495px'}
-                  height={'370px'}
+                  height100={'370px'}
                   bg={theme.colors.dark}
                   borderRadius={theme.borderRadius.m}
+                  overflow={'hidden'}
                 >
                   {item}
                 </Box>
                 <Box
                   width={'30px'}
-                  margin={0}
+                  width100={'100%'}
                 />
                 <Box
                   width={'390px'}
@@ -58,7 +58,7 @@ const Slider = ({intl, state, slide}: any) => {
             )
           })
         }
-      </SliderStyle>
+      </Box>
 
 
     </Box>

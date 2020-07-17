@@ -4,7 +4,7 @@ import borderRadius from './BorderRadius'
 import lineHeight from './LineHeight'
 import { injectGlobal } from 'emotion'
 import { fontFamily } from './FontFamily'
-import { border } from './Border'
+import border from './Border'
 
 
 export const theme = {
@@ -41,7 +41,7 @@ injectGlobal`
         format('woff2');
   }
   img {
-        object-fit: contain;
+        object-fit: cover;
         width: 100%;
         height: 100%;
       }`

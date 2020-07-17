@@ -46,20 +46,21 @@ const Automatization = () => {
           sliderShow={sliderShow}
         />
         <Title />
-        <Box height='80px' />
       </Layout>
-      <Box display={'flex'} wrap={'nowrap'}>
-        <Box width={'190px'}/>
+      <Box height={'80px'}/>
+      <Box display={'flex'}>
+        <Box width={'209px'} width100={'100%'}/>
         <Slider slide={slide} state={x} />
       </Box>
       <Box
         width={'285px'}
         height={'118px'}
-        bgI={'url(\'site/ui/svg/Wave.svg\')'}
+        bgI={`url('site/ui/icon/Wave.svg')`}
         position={'absolute'}
-        left={'110px'}
-        top={'1400px'}
+        left={'135px'}
+        top={'1408px'}
         zIndex={2}
+        width100={'100%'}
       />
       <Box height='234px' />
     </Section>

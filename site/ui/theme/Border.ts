@@ -1,6 +1,8 @@
 import { Border } from './Types'
 
 
-export const border: Border = {
-  s: '1px solid'
-}
+const border: Border = [1]
+
+border.s = `${border[0]}px solid`
+
+export default border

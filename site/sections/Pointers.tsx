@@ -2,7 +2,7 @@ import React from 'react'
 import DivMargin from '../ui/layout/DivMargin'
 import Tabs from '../ui/Tabs'
 import { Box } from '../ui/layout/Box'
-import { SvgStyle } from '../ui/svg/SvgStyle'
+import { SvgStyle } from '../ui/icon/SvgStyle'
 import {
   ProposExport1,
   ProposExport2,
@@ -10,7 +10,7 @@ import {
   ProposExport4,
   ProposExport5,
   ProposExport6, ProposExport7, ProposExport8
-} from '../ui/svg/ProposSvg'
+} from '../ui/icon/ProposSvg'
 import { Title } from '../ui/pointers/Title'
 import textComponent from '../ui/text/TextComponents'
 import { Text } from '../ui/pointers/Text'

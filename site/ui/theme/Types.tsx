@@ -33,6 +33,6 @@ export interface TabsRadius {
   right?: string
 }
 
-export interface Border {
+export interface Border extends Array<string | number>{
   s?: string
 }

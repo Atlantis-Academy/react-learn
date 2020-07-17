@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import Logo from '../../ui/svg/Logo'
+import Logo from '../../ui/icon/Logo'
 import { Button } from '../../ui/Button'
 import React from 'react'
 import { Box } from '../../ui/layout/Box2'

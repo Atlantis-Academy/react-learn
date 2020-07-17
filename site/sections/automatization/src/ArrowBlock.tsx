@@ -9,9 +9,9 @@ export const ArrowBlock = ({sliderShow}: any) => {
   return (
     <Box
       display={'flex'}
-      width={'426px'}
-      margin={0}
+      width={'632px'}
       alignItems={'center'}
+      width100={'100%'}
     >
       <ArrowLeft sliderShow={sliderShow}/>
       <DivMargin width='10px' />

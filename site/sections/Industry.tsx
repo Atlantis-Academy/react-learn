@@ -1,10 +1,10 @@
 import React from 'react'
 import DivMargin from '../ui/layout/DivMargin'
-import { WavesL, WavesXL } from '../ui/svg/Wave'
+import { WavesL, WavesXL } from '../ui/icon/Wave'
 import { Box } from '../ui/layout/Box'
 import { Title } from '../ui/industry/Title'
 import textComponent from '../ui/text/TextComponents'
-import { SvgStyle } from '../ui/svg/SvgStyle'
+import { SvgStyle } from '../ui/icon/SvgStyle'
 import {
   Industri2,
   IndustriExp,
@@ -15,7 +15,7 @@ import {
   IndustriExp6,
   IndustriExp7,
   IndustriExp8
-} from '../ui/svg/IndusriSvg'
+} from '../ui/icon/IndusriSvg'
 import { Text } from '../ui/industry/Text'
 import { theme } from '../ui/theme'
 

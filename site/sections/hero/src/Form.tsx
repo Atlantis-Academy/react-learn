@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { BorderInput, FormStyle, InputForm, InputText, InputTextBox } from '../../../ui/FormStyle'
+import { BorderInput, FormStyle, InputForm, InputText, InputTextBox } from '../../../ui/hero/FormStyle'
 import { injectIntl } from 'react-intl'
 import { Button } from '../../../ui/Button'
 import messages from './Messages'

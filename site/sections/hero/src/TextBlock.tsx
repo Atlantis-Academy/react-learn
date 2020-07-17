@@ -1,5 +1,5 @@
 import { Text } from '../../../ui/text/Text'
-import { WavesL } from '../../../ui/svg/Wave'
+import { WavesL } from '../../../ui/icon/Wave'
 import { Box } from '../../../ui/layout/Box2'
 import React from 'react'
 import Title from './Title'
@@ -12,7 +12,7 @@ import { theme } from '../../../ui/theme'
 
 const TextBlock = ({intl}: any) => {
   return (
-    <Box width='510px'>
+    <Box width='600px'>
       <TitleH1>
         <Title />
       </TitleH1>
@@ -24,10 +24,11 @@ const TextBlock = ({intl}: any) => {
         width={82}
         height={12}
       />
-      <Box height='30px' />
+      <Box height='15px' />
       <Text
         color={theme.colors.white}
         size={theme.fontSize.m}
+        lineHeight={theme.lineHeight.s}
       >
         {intl.formatMessage(messages.hero.text)}
       </Text>
