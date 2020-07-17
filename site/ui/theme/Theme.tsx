@@ -1,5 +1,5 @@
 import { injectGlobal } from 'emotion'
-import { Border, TabsRadius } from './Types'
+import { Border } from './Types'
 
 
 injectGlobal`
@@ -41,13 +41,8 @@ export const colors: any = {
 }
 
 export const fontFamily = {
-  text: '"Proxima Nova", , sans-serif',
-  title: '"Blogger Sans", , sans-serif',
-}
-
-export const tabsRadius: TabsRadius = {
-  left: '20px 0px 0px 20px',
-  right: '0px 20px 20px 0px'
+  text: '"Proxima Nova", sans-serif',
+  title: '"Blogger Sans", sans-serif',
 }
 
 export const border: Border = {
