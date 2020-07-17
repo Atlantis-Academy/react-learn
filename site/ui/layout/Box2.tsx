@@ -20,6 +20,6 @@ top: ${prop('top')};
 border-radius: ${prop('borderRadius')};
 margin: ${prop('margin', '0 auto')};
 z-index: ${prop('zIndex')};
-width: 100%;
-flex-wrap: wrap;
-overflow: hidden;`
+width: ${prop('width100','100%')};
+flex-wrap: ${prop('wrap', 'wrap')};
+overflow: ${prop('overflow', 'hidden;')}`

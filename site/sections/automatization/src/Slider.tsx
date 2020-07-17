@@ -5,50 +5,61 @@ import { injectIntl } from 'react-intl'
 import { Button } from '../../../ui/Button'
 import React from 'react'
 import messages from './Messages'
+import { SliderStyle } from '../../../ui/auto/Slider'
+import { SliderContent } from '../../../ui/auto/SliderContent'
 
-
-const Slider = ({intl, state}: any) => {
+const Slider = ({intl, state, slide}: any) => {
   return (
     <Box
       display={'flex'}
       position={'relative'}
-      width={'1018px'}
       justify={'start'}
+      margin={0}
     >
-      <Box
-        width={'495px'}
-        height={'370px'}
-        bg={theme.colors.dark}
-        borderRadius={theme.borderRadius.m}
-        margin={0}
-        display={'flex'}
-        justify={'center'}
-        alignItems={'center'}
-      >
-        <img
-          src={state.img[state.imgIndex]}
-          alt=''
-        />
-      </Box>
-      <Box
-        width={'30px'}
-        margin={0}
-      />
-      <Box
-        width={'390px'}
-        margin={0}
-      >
-        <Box>
-          <Text size={theme.fontSize.s} lineHeight={theme.lineHeight.xs}>
-            {intl.formatMessage(messages.text)}
-          </Text>
-        </Box>
-        <Box height={'76px'} />
-        <Button
-        >
-          {intl.formatMessage(messages.button)}
-        </Button>
-      </Box>
+      <SliderStyle>
+        {
+          slide.map((item: any, index: number) => {
+            return (
+              <SliderContent
+                key={index}
+                style={{transform: `translateX(${state}%)`}}
+              >
+                <Box
+                  width={'495px'}
+                  height={'370px'}
+                  bg={theme.colors.dark}
+                  borderRadius={theme.borderRadius.m}
+                >
+                  {item}
+                </Box>
+                <Box
+                  width={'30px'}
+                  margin={0}
+                />
+                <Box
+                  width={'390px'}
+                  margin={0}
+                >
+                  <Box>
+                    <Text
+                      size={theme.fontSize.s}
+                      lineHeight={theme.lineHeight.xs}
+                    >
+                      {intl.formatMessage(messages.text)}
+                    </Text>
+                  </Box>
+                  <Box height={'76px'} />
+                  <Button
+                  >
+                    {intl.formatMessage(messages.button)}
+                  </Button>
+                </Box>
+              </SliderContent>
+            )
+          })
+        }
+      </SliderStyle>
+
 
     </Box>
   )

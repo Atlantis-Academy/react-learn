@@ -1,8 +1,6 @@
 import styled from '@emotion/styled'
 import React from 'react'
 import { theme } from './theme'
-import { ifProp } from 'styled-tools'
-
 
 export const ArrowStyle: any = styled.div(() => ({
   border: `${theme.border.s} ${theme.colors.whiteBlue}`,
@@ -13,16 +11,13 @@ export const ArrowStyle: any = styled.div(() => ({
   justifyContent: 'center',
   alignItems: 'center',
   cursor: 'pointer',
-  opacity: 1,
-}),
-  ifProp('disabled', ()=>({
-    opacity: 0.5
-  }))
-  )
+  opacity: 0.5,
+  ':hover': {opacity: 1}
+}))
 
-const ArrowLeft = ({sliderShow, disabledLeft}: any) => {
+const ArrowLeft = ({sliderShow}: any) => {
   return (
-    <ArrowStyle disabled={disabledLeft} data-direction={'prev'} onClick={sliderShow}>
+    <ArrowStyle data-direction={'prev'} onClick={sliderShow}>
       <svg
         width={31}
         height={28}

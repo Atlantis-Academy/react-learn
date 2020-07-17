@@ -8,64 +8,29 @@ import { ArrowBlock } from './src/ArrowBlock'
 import Title from './src/Title'
 import Slider from './src/Slider'
 
-
 const Automatization = () => {
 
-  const [show, setShow] = useState({
-    img: [
-      'site/ui/img/slide/React-img.png',
-      'site/ui/img/slide/React-img1.png',
-      'site/ui/img/slide/React-img2.png',
-      'site/ui/img/slide/React-img3.png'
-    ],
-    imgIndex: 0,
-  })
+  const slide: Array<object> = [
+    <img src={'site/ui/img/slider/React-img.png'} alt='slide-image'/>,
+    <img src={'site/ui/img/slider/React-img1.png'} alt='slide-image'/>,
+    <img src={'site/ui/img/slider/React-img2.png'} alt='slide-image'/>,
+    <img src={'site/ui/img/slider/React-img3.png'} alt='slide-image'/>,
+  ]
 
-  const [disabledLeft, setDisabledLeft] = useState(true)
-  const [disabledRight, setDisabledRight] = useState(false)
+  const [x, setX] = useState(0)
 
   const sliderShow = (event: any) => {
 
     if (event.currentTarget.dataset.direction === 'next') {
-      if (show.imgIndex < show.img.length - 1) {
-        setShow({
-          img: show.img,
-          imgIndex: show.imgIndex + 1,
-        })
 
-      }
+      x === -100*(slide.length-1)? setX(0): setX(x-100)
+
     }
 
     if (event.currentTarget.dataset.direction === 'prev') {
-      if (show.imgIndex > 0) {
-        setShow({
-          img: show.img,
-          imgIndex: show.imgIndex - 1,
-        })
-      }
-    }
 
-    // if (show.imgIndex >= show.img.length - 1) {
-    //   setShow({
-    //     img: show.img,
-    //     imgIndex: 0,
-    //   })
-    // }
+      x === 0? setX(-100*(slide.length-1)) : setX(x+100)
 
-    if (show.imgIndex > 0) {
-      setDisabledLeft(false)
-    }
-
-    if (show.imgIndex === show.img.length - 1) {
-      setDisabledRight(true)
-    }
-
-    if (show.imgIndex < show.img.length - 1) {
-      setDisabledRight(false)
-    }
-
-    if (show.imgIndex === 0) {
-      setDisabledLeft(true)
     }
   }
 
@@ -79,13 +44,14 @@ const Automatization = () => {
       >
         <ArrowBlock
           sliderShow={sliderShow}
-          disabledLeft={disabledLeft}
-          disabledRight={disabledRight}
         />
         <Title />
         <Box height='80px' />
-        <Slider state={show} />
       </Layout>
+      <Box display={'flex'} wrap={'nowrap'}>
+        <Box width={'190px'}/>
+        <Slider slide={slide} state={x} />
+      </Box>
       <Box
         width={'285px'}
         height={'118px'}

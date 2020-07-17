@@ -34,6 +34,18 @@ export const module = {
       ],
     },
     {
+      test: /\.(png|jpe?g|gif)$/i,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'images/'
+          }
+        },
+      ],
+    },
+    {
       test: /\.js$/,
       enforce: 'pre',
       use: ['source-map-loader'],
