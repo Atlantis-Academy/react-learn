@@ -9,7 +9,7 @@ const LeftTab = styled.div(() => ({
   width: '200px',
   height: '40px',
   background: theme.colors.colorDark,
-  borderRadius: theme.tabsRadius.left,
+  borderRadius: '20px 0px 0px 20px',
   fontFamily: theme.fontFamily.text,
   fontWeight: 600,
   fontSize: `${theme.fontSize.xs}`,
@@ -23,8 +23,8 @@ const LeftTab = styled.div(() => ({
 }))
 
 const RightTab = styled(LeftTab)(() => ({
-  borderRadius: theme.tabsRadius.right,
-  border: `1px solid ${theme.colors.gray}`,
+  borderRadius: '0px 20px 20px 0px',
+  border: `${theme.border.s} ${theme.colors.gray}`,
   background: theme.colors.white,
   color: theme.colors.colorDark
 }))

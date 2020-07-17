@@ -4,7 +4,6 @@ import borderRadius from './BorderRadius'
 import lineHeight from './LineHeight'
 import { injectGlobal } from 'emotion'
 import { fontFamily } from './FontFamily'
-import { tabsRadius } from './TabsRadius'
 import { border } from './Border'
 
 
@@ -14,7 +13,6 @@ export const theme = {
   fontFamily,
   borderRadius,
   lineHeight,
-  tabsRadius,
   border,
 }
 

@@ -19,40 +19,53 @@ const Automatization = () => {
       'site/ui/img/slide/React-img3.png'
     ],
     imgIndex: 0,
-    prev: false,
-    next: true
   })
 
+  const [disabledLeft, setDisabledLeft] = useState(true)
+  const [disabledRight, setDisabledRight] = useState(false)
+
   const sliderShow = (event: any) => {
+
     if (event.currentTarget.dataset.direction === 'next') {
       if (show.imgIndex < show.img.length - 1) {
         setShow({
           img: show.img,
-          imgIndex: show.imgIndex +1,
-          prev: show.prev,
-          next: show.next,
+          imgIndex: show.imgIndex + 1,
         })
+
       }
     }
 
     if (event.currentTarget.dataset.direction === 'prev') {
-      if (show.imgIndex > 0 ) {
+      if (show.imgIndex > 0) {
         setShow({
           img: show.img,
           imgIndex: show.imgIndex - 1,
-          prev: show.prev,
-          next: show.next,
         })
       }
     }
 
-    if(show.imgIndex >= show.img.length-1){
-      setShow({
-        img: show.img,
-        imgIndex: 0,
-        prev: show.prev,
-        next: show.next,
-      })
+    // if (show.imgIndex >= show.img.length - 1) {
+    //   setShow({
+    //     img: show.img,
+    //     imgIndex: 0,
+    //   })
+    // }
+
+    if (show.imgIndex > 0) {
+      setDisabledLeft(false)
+    }
+
+    if (show.imgIndex === show.img.length - 1) {
+      setDisabledRight(true)
+    }
+
+    if (show.imgIndex < show.img.length - 1) {
+      setDisabledRight(false)
+    }
+
+    if (show.imgIndex === 0) {
+      setDisabledLeft(true)
     }
   }
 
@@ -66,7 +79,8 @@ const Automatization = () => {
       >
         <ArrowBlock
           sliderShow={sliderShow}
-          state={show}
+          disabledLeft={disabledLeft}
+          disabledRight={disabledRight}
         />
         <Title />
         <Box height='80px' />

@@ -39,7 +39,7 @@ const Slider = ({intl, state}: any) => {
         margin={0}
       >
         <Box>
-          <Text size={theme.fontSize.s}>
+          <Text size={theme.fontSize.s} lineHeight={theme.lineHeight.xs}>
             {intl.formatMessage(messages.text)}
           </Text>
         </Box>

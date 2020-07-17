@@ -12,7 +12,7 @@ const FormBlock = ({intl}: any) => {
     <HeroForm>
       <Box height='40px' />
       <Text
-        size={theme.fontSize.xs}
+        size={theme.fontSize.ml}
         color={theme.colors.white}
         font={theme.fontFamily.text}
       >

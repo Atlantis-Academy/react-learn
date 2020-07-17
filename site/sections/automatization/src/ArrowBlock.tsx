@@ -5,7 +5,7 @@ import { Box } from '../../../ui/layout/Box2'
 import React from 'react'
 
 
-export const ArrowBlock = ({sliderShow, state}: any) => {
+export const ArrowBlock = ({sliderShow, disabledLeft, disabledRight}: any) => {
   return (
     <Box
       display={'flex'}
@@ -13,9 +13,9 @@ export const ArrowBlock = ({sliderShow, state}: any) => {
       margin={0}
       alignItems={'center'}
     >
-      <ArrowLeft state={state} sliderShow={sliderShow}/>
+      <ArrowLeft disabledLeft={disabledLeft} sliderShow={sliderShow}/>
       <DivMargin width='10px' />
-      <ArrowRight state={state} sliderShow={sliderShow}/>
+      <ArrowRight disabledRight={disabledRight} sliderShow={sliderShow}/>
     </Box>
   )
 }

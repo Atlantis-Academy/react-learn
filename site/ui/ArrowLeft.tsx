@@ -20,11 +20,9 @@ export const ArrowStyle: any = styled.div(() => ({
   }))
   )
 
-const ArrowLeft = ({sliderShow, state}: any) => {
-
-console.log(state)
+const ArrowLeft = ({sliderShow, disabledLeft}: any) => {
   return (
-    <ArrowStyle disabled={''} data-direction={'prev'} onClick={sliderShow}>
+    <ArrowStyle disabled={disabledLeft} data-direction={'prev'} onClick={sliderShow}>
       <svg
         width={31}
         height={28}

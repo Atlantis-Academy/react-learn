@@ -7,7 +7,7 @@ import { theme } from '../theme'
 export const Text: any = styled.span`
 color: ${prop('color', `${theme.colors.dark}`)};
 font-size: ${prop('size', `${theme.fontSize.m}`)};
-line-height: ${prop('lineHeight', `${theme.lineHeight.xs}`)};
+line-height: ${prop('lineHeight')};
 font-family: ${prop('font', `${theme.fontFamily.text}`)};
 width: ${prop('width')};
 ${switchProp('themeText', {
