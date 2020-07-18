@@ -1,12 +1,12 @@
 import styled from '@emotion/styled'
-import theme from '../../ui/theme/Theme'
-import Logo from '../../ui/svg/Logo'
+import Logo from '../../ui/icon/Logo'
 import { Button } from '../../ui/Button'
 import React from 'react'
 import { Box } from '../../ui/layout/Box2'
 import { Layout } from '../../ui/layout/Layout'
 import { injectIntl } from 'react-intl'
 import messages from '../hero/src/Messages'
+import { theme } from '../../ui/theme'
 
 
 const HeaderStyle = styled.header(()=>({

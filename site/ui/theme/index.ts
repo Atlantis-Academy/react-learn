@@ -1,5 +1,20 @@
+import fontSize from './FontSize'
+import { colors } from './Colors'
+import borderRadius from './BorderRadius'
+import lineHeight from './LineHeight'
 import { injectGlobal } from 'emotion'
+import { fontFamily } from './FontFamily'
+import border from './Border'
 
+
+export const theme = {
+  fontSize,
+  colors,
+  fontFamily,
+  borderRadius,
+  lineHeight,
+  border,
+}
 
 injectGlobal`
   * {
@@ -25,35 +40,8 @@ injectGlobal`
       url('./site/ui/theme/fonts/BloggerSans-Bold.woff2')
         format('woff2');
   }
- `
-
-
-const theme = {
-  colors: {
-    colorDark: '#0F2B3D',
-    white: '#FFFFFF',
-    darkBlue: '#0A4759',
-    whiteBlue: '#3BB3C4',
-    dark: '#0F2B3D',
-    gray: '#DDDDDD',
-    black: '#000000',
-    beige: '#F2F2F2',
-    darkBeige: '#e6e6e6'
-
-
-  },
-  width: '1440px',
-  fontFamilyText: 'Proxima Nova',
-  fontFamilyTitle: 'Blogger Sans',
-  fontSize: [16, 40, 22],
-  lineHeight: [45],
-  tabsRadius: {
-    left: '20px 0px 0px 20px',
-    right: '0px 20px 20px 0px'
-  },
-  border: {
-    s: '1px solid'
-  }
-}
-
-export default theme;
+  img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }`

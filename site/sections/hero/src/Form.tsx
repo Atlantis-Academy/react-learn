@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { BorderInput, FormStyle, InputForm, InputText, InputTextBox } from '../../../ui/FormStyle'
+import { BorderInput, FormStyle, InputForm, InputText, InputTextBox } from '../../../ui/hero/FormStyle'
 import { injectIntl } from 'react-intl'
 import { Button } from '../../../ui/Button'
 import messages from './Messages'
 import { Box } from '../../../ui/layout/Box2'
 import { Text } from '../../../ui/text/Text'
-import theme from '../../../ui/theme/Theme'
-import fontSize from '../../../ui/theme/FontSize'
+import { theme } from '../../../ui/theme'
 
 
 const Form = ({intl}: any) => {
@@ -55,7 +54,7 @@ const Form = ({intl}: any) => {
         height='40px'
       >
         <Text
-          size={fontSize.xs}
+          size={theme.fontSize.xs}
           color={theme.colors.white}
         >{end}</Text>
       </Box>

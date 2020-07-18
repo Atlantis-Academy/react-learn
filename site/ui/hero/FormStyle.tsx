@@ -1,7 +1,6 @@
 import styled from '@emotion/styled'
-import theme from './theme/Theme'
-import fontSize from './theme/FontSize'
-import borderRadius from './theme/BorderRadius'
+import { theme } from '../theme'
+
 
 
 export const FormStyle = styled.form(() => ({
@@ -21,13 +20,13 @@ export const InputForm = styled.input(() => ({
   overflow: 'hidden',
   outline: 'none',
   color: theme.colors.white,
-  fontFamily: theme.fontFamilyText,
-  fontSize: fontSize.xs,
+  fontFamily: theme.fontFamily.text,
+  fontSize: theme.fontSize.xs,
 }))
 
 export const BorderInput = styled.div(() => ({
   border: `${theme.border.s} ${theme.colors.whiteBlue}`,
-  borderRadius: borderRadius.s,
+  borderRadius: theme.borderRadius.s,
   padding: '2px',
   width: '310px',
   height: '58px',
@@ -41,8 +40,8 @@ export const InputText = styled.span(() => ({
   overflow: 'hidden',
   borderColor: 'inherit',
   color: theme.colors.white,
-  fontFamily: theme.fontFamilyText,
-  fontSize: fontSize.xs,
+  fontFamily: theme.fontFamily.text,
+  fontSize: theme.fontSize.xs,
   width: 'fit-content'
 }))
 

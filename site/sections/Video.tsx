@@ -1,8 +1,7 @@
 import React from 'react'
 import DivMargin from '../ui/layout/DivMargin'
-import { WavesL } from '../ui/svg/Wave'
+import { WavesL } from '../ui/icon/Wave'
 import { Box } from '../ui/layout/Box'
-import theme from '../ui/theme/Theme'
 import { ArrowLeft } from '../ui/ArrowLeft'
 import { ArrowRight } from '../ui/ArrowRight'
 import Section from '../ui/Section'
@@ -10,6 +9,7 @@ import { BoxSection } from '../ui/layout/BoxSection'
 import { Text } from '../ui/text/Text'
 import { FormattedMessage } from 'react-intl'
 import VideoBox from '../ui/video/VideoBox'
+import { theme } from '../ui/theme'
 
 const Video = () => {
   return (
@@ -18,7 +18,7 @@ const Video = () => {
       position={'relative'}
     >
       <Box
-        backgroundImage={'url(\'site/ui/svg/Wave.svg\')'}
+        backgroundImage={'url(\'site/ui/icon/Wave.svg\')'}
         position={'absolute'}
         width={'285px'}
         height={'53px'}
@@ -26,7 +26,7 @@ const Video = () => {
         left={'52%'}
       />
       <Box
-        backgroundImage={'url(\'site/ui/svg/Wave.svg\')'}
+        backgroundImage={'url(\'site/ui/icon/Wave.svg\')'}
         backgroundSize={'285px 500px'}
         backgroundRepeat={'no-repeat repeat'}
         backgroundPosition={'65%'}
@@ -106,7 +106,7 @@ const Video = () => {
         </BoxSection>
       </Box>
       <Box
-        backgroundImage={'url(\'site/ui/svg/Wave.svg\')'}
+        backgroundImage={'url(\'site/ui/icon/Wave.svg\')'}
         position={'absolute'}
         width={'285px'}
         height={'53px'}

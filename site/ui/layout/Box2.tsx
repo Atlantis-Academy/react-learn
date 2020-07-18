@@ -14,5 +14,13 @@ background-size: ${prop('bgS')};
 background-repeat: ${prop('bgR')};
 background-position: ${prop('bgP')};
 border: ${prop('border')};
-width: 100%;
-flex-wrap: wrap;`
+position: ${prop('position')};
+left: ${prop('left')};
+top: ${prop('top')};
+border-radius: ${prop('borderRadius')};
+margin: ${prop('margin')};
+z-index: ${prop('zIndex')};
+width: ${prop('width100')};
+height: ${prop('height100')};
+flex-wrap: ${prop('wrap')};
+overflow: ${prop('overflow')}`

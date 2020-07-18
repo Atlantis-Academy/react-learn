@@ -1,13 +1,13 @@
 import React from 'react'
 import DivMargin from '../ui/layout/DivMargin'
-import theme from '../ui/theme/Theme'
 import { Box } from '../ui/layout/Box'
-import { WavesL } from '../ui/svg/Wave'
+import { WavesL } from '../ui/icon/Wave'
 import { Text } from '../ui/text/Text'
-import { AdobeSvg, AmoCrmSvg, BitrixSvg, ExcelSvg, OnesSvg, PpSvg, WordSvg } from '../ui/svg/ProgramSvg'
+import { AdobeSvg, AmoCrmSvg, BitrixSvg, ExcelSvg, OnesSvg, PpSvg, WordSvg } from '../ui/icon/ProgramSvg'
 import Section from '../ui/Section'
 import { BoxSection } from '../ui/layout/BoxSection'
 import { FormattedMessage } from 'react-intl'
+import { theme } from '../ui/theme'
 
 
 const Case = () => {
@@ -19,7 +19,7 @@ const Case = () => {
       <Box
         width={'285px'}
         height={'186px'}
-        backgroundImage={'url(\'site/ui/svg/Wave.svg\')'}
+        backgroundImage={'url(\'site/ui/icon/Wave.svg\')'}
         position={'absolute'}
         left={'980px'}
         top={'-64px'}
@@ -81,7 +81,7 @@ const Case = () => {
       <Box
         width={'285px'}
         height={'118px'}
-        backgroundImage={'url(\'site/ui/svg/Wave.svg\')'}
+        backgroundImage={'url(\'site/ui/icon/Wave.svg\')'}
         position={'relative'}
         left={'105px'}
         top={'55px'}

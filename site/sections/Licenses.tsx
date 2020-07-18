@@ -1,7 +1,6 @@
 import React from 'react'
 import DivMargin from '../ui/layout/DivMargin'
-import theme from '../ui/theme/Theme'
-import { WavesL } from '../ui/svg/Wave'
+import { WavesL } from '../ui/icon/Wave'
 import { Box } from '../ui/layout/Box'
 import { ArrowLeft } from '../ui/ArrowLeft'
 import { ArrowRight } from '../ui/ArrowRight'
@@ -12,6 +11,7 @@ import License1 from '../ui/licenses/License1'
 import License2 from '../ui/licenses/License2'
 import License3 from '../ui/licenses/License3'
 import License4 from '../ui/licenses/License4'
+import { theme } from '../ui/theme'
 
 
 const Licenses = () => {
