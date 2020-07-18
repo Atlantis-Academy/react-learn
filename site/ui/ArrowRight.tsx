@@ -3,9 +3,9 @@ import { ArrowStyle } from './ArrowLeft'
 import ArrowRightIcon from './icon/ArrowRightIcon'
 
 
-const ArrowRight = ({sliderShow}: any) => {
+const ArrowRight = () => {
   return (
-    <ArrowStyle data-direction={'next'} onClick={sliderShow}>
+    <ArrowStyle>
       <ArrowRightIcon/>
     </ArrowStyle>
   )
