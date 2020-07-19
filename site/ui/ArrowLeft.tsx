@@ -16,9 +16,9 @@ export const ArrowStyle: any = styled.div(() => ({
   ':hover': {opacity: 1}
 }))
 
-const ArrowLeft = ({sliderShow}: any) => {
+const ArrowLeft = () => {
   return (
-    <ArrowStyle data-direction={'prev'} onClick={sliderShow}>
+    <ArrowStyle>
       <ArrowLeftIcon/>
     </ArrowStyle>
   )

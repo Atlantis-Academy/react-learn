@@ -1,11 +1,19 @@
 import { ArrowLeft } from '../../../ui/ArrowLeft'
-import DivMargin from '../../../ui/layout/DivMargin'
 import { ArrowRight } from '../../../ui/ArrowRight'
 import { Box } from '../../../ui/layout/Box2'
 import React from 'react'
+import { slides } from './Slides'
 
+export const ArrowBlock = ({x, setX}: any) => {
 
-export const ArrowBlock = ({sliderShow}: any) => {
+  const sliderShowLeft = () => {
+    x === 0 ? setX(-100 * (slides.length - 1)) : setX(x + 100)
+  }
+
+  const sliderShowRight = () => {
+    x === -100 * (slides.length - 1) ? setX(0) : setX(x - 100)
+  }
+
   return (
     <Box
       display={'flex'}
@@ -13,9 +21,17 @@ export const ArrowBlock = ({sliderShow}: any) => {
       alignItems={'center'}
       width100={'100%'}
     >
-      <ArrowLeft sliderShow={sliderShow}/>
-      <DivMargin width='10px' />
-      <ArrowRight sliderShow={sliderShow}/>
+      <Box onClick={sliderShowLeft}>
+        <ArrowLeft />
+      </Box>
+      <Box
+        width='10px'
+        width100={'100%'}
+      />
+      <Box onClick={sliderShowRight}>
+        <ArrowRight />
+      </Box>
+
     </Box>
   )
 }
