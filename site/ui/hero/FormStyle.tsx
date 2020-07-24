@@ -2,7 +2,6 @@ import styled from '@emotion/styled'
 import { theme } from '../theme'
 
 
-
 export const FormStyle = styled.form(() => ({
   display: 'flex',
   flexDirection: 'column',
@@ -29,7 +28,7 @@ export const BorderInput = styled.div(() => ({
   borderRadius: theme.borderRadius.s,
   padding: '2px',
   width: '310px',
-  height: '58px',
+  height: '55px',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center'
@@ -50,5 +49,5 @@ export const InputTextBox = styled.div(()=>({
   top: '8px',
   left: '8px',
   width: '100%',
-  marginLeft: '10px'
+  marginLeft: '29px'
 }))

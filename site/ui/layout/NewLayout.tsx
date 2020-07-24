@@ -14,3 +14,11 @@ Row.defaultProps = {
   flexDirection: 'row',
   display: 'flex',
 }
+
+export const Column = styled.div(layout, space, flexbox, position)
+
+Column.defaultProps = {
+  width: '100%',
+  flexDirection: 'column',
+  display: 'flex',
+}

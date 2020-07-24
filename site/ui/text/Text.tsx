@@ -3,7 +3,6 @@ import { prop, switchProp } from 'styled-tools'
 import { theme } from '../theme'
 
 
-
 export const Text: any = styled.span`
 color: ${prop('color', `${theme.colors.dark}`)};
 font-size: ${prop('size', `${theme.fontSize.m}`)};
@@ -20,7 +19,6 @@ ${switchProp('themeText', {
   h2: {
     fontFamily: theme.fontFamily.title,
     fontSize: theme.fontSize.l,
-    lineHeight: theme.lineHeight.l,
   },
   sectionTitle: {
     fontFamily: theme.fontFamily.title,

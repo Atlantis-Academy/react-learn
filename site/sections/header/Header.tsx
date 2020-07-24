@@ -18,7 +18,7 @@ const Header = ({intl}: any) => {
   return (
     <HeaderStyle>
       <Box
-        height={[50]}
+        height={40}
       />
       <Row
         justifyContent={'space-between'}
@@ -27,10 +27,9 @@ const Header = ({intl}: any) => {
         <Logo />
         <Button
           bg={'transparent'}
-          py={[10]}
-          px={[30]}
+          py={10}
+          px={30}
           border={`${theme.border.s} ${theme.colors.white}`}
-          borderRadius={theme.borderRadius.s}
         >
           {intl.formatMessage(messages.headerButton)}
         </Button>

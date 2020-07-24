@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { BorderInput, FormStyle, InputForm, InputText, InputTextBox } from '../../../ui/hero/FormStyle'
 import { injectIntl } from 'react-intl'
-import { Button } from '../../../ui/Button'
+import { Button } from '../../../ui/NewButton'
 import messages from './Messages'
-import { Box } from '../../../ui/layout/Box2'
+import { Box } from '../../../ui/layout/NewBox'
 import { Text } from '../../../ui/text/Text'
 import { theme } from '../../../ui/theme'
 
@@ -51,7 +51,7 @@ const Form = ({intl}: any) => {
         justify={'center'}
         alignItems={'center'}
         width={'320px'}
-        height='40px'
+        height='18px'
       >
         <Text
           size={theme.fontSize.xs}
@@ -69,7 +69,6 @@ const Form = ({intl}: any) => {
           value={name}
         />
       </BorderInput>
-      <Box height='20px' />
       <InputTextBox>
         <InputText>{intl.formatMessage(messages.hero.form.job)}</InputText>
       </InputTextBox>
@@ -81,7 +80,6 @@ const Form = ({intl}: any) => {
           value={job}
         />
       </BorderInput>
-      <Box height='20px' />
       <InputTextBox>
         <InputText>{intl.formatMessage(messages.hero.form.phone)}</InputText>
       </InputTextBox>
@@ -93,7 +91,6 @@ const Form = ({intl}: any) => {
           value={phone}
         />
       </BorderInput>
-      <Box height='20px' />
       <InputTextBox>
         <InputText>{intl.formatMessage(messages.hero.form.email)}</InputText>
       </InputTextBox>
@@ -107,8 +104,10 @@ const Form = ({intl}: any) => {
       </BorderInput>
       <Box height='20px' />
       <Button
-        padding={'15px 116px'}
+        px={110}
+        py={15}
         border={'none'}
+        bg={theme.colors.whiteBlue}
       >{intl.formatMessage(messages.hero.formButton)}</Button>
     </FormStyle>
 
