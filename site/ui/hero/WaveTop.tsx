@@ -5,5 +5,5 @@ export const WaveTop = styled(BoxForm)(()=>({
   background: `url('site/ui/icon/Wave.svg')`,
   backgroundSize: '285px 276px',
   backgroundRepeat: 'no-repeat',
-  backgroundPosition: '100% 8%',
+  backgroundPosition: '315px 50px',
 }))

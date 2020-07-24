@@ -1,13 +1,14 @@
 
 export const colors: any = {
-    colorDark: '#0F2B3D',
-    white: '#FFFFFF',
-    darkBlue: '#0A4759',
-    whiteBlue: '#3BB3C4',
-    dark: '#0F2B3D',
-    gray: '#DDDDDD',
+    colorDark: '#0f2b3d',
+    white: '#ffffff',
+    darkBlue: '#0a4759',
+    whiteBlue: '#3bb3c4',
+    hoverButton: '#59bbc9',
+    dark: '#0f2b3d',
+    gray: '#dddddd',
     black: '#000000',
-    beige: '#F2F2F2',
+    beige: '#f2f2f2',
     darkBeige: '#e6e6e6',
 }
 

@@ -1,8 +1,8 @@
+//todo: delete this file
+
 import styled from 'styled-components'
 import { prop } from 'styled-tools'
 import { theme } from './theme'
-
-
 
 
 export const Button: any = styled.button`
@@ -14,5 +14,4 @@ export const Button: any = styled.button`
   font-family: ${theme.fontFamily.text};
   font-size: ${theme.fontSize.xs};
   text-transform: uppercase;
-  cursor: pointer;
-`
+  cursor: pointer;`

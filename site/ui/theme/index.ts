@@ -14,6 +14,7 @@ export const theme = {
   borderRadius,
   lineHeight,
   border,
+  breakpoints: ['375px', '768px', '1440px'],
 }
 
 injectGlobal`

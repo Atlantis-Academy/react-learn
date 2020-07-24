@@ -3,10 +3,11 @@ import Section from '../../ui/Section'
 import { Layout } from '../../ui/layout/Layout'
 import TextBlock from './src/TextBlock'
 import FormBlock from './src/FormBlock'
-import { Box } from '../../ui/layout/Box2'
+import { Box } from '../../ui/layout/NewBox'
 import { BoxForm } from '../../ui/hero/BoxForm'
 import { WaveTop } from '../../ui/hero/WaveTop'
 import { WaveBottom } from '../../ui/hero/WaveBottom'
+import { Column } from '../../ui/layout/NewLayout'
 
 
 const HeroSection = () => {
@@ -16,15 +17,28 @@ const HeroSection = () => {
         alignItems={'center'}
       >
         <TextBlock />
-        <BoxForm>
-          <WaveTop>
-            <WaveBottom>
-              <FormBlock/>
-            </WaveBottom>
-          </WaveTop>
-        </BoxForm>
+        <Column
+          flexBasis={600}
+          height={672}
+        >
+          <BoxForm>
+            <WaveTop>
+              <WaveBottom>
+                <Column
+                  width={[1]}
+                  alignItems={'center'}
+                  height={'100%'}
+                  justifyContent={'center'}
+                >
+                  <Box height={30} />
+                  <FormBlock />
+                </Column>
+              </WaveBottom>
+            </WaveTop>
+          </BoxForm>
+        </Column>
       </Layout>
-      <Box height='28px' />
+      <Box height={36} />
     </Section>
   )
 }

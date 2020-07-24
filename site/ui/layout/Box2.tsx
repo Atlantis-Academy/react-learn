@@ -1,3 +1,5 @@
+//todo: delete this file
+
 import styled from 'styled-components'
 import { prop } from 'styled-tools'
 //todo: rename Box2

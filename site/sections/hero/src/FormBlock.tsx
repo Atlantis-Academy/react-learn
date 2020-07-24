@@ -3,14 +3,14 @@ import { injectIntl } from 'react-intl'
 import Form from './Form'
 import { HeroForm } from '../../../ui/hero/HeroForm'
 import React from 'react'
-import { Box } from '../../../ui/layout/Box2'
+import { Box } from '../../../ui/layout/NewBox'
 import messages from './Messages'
 import { theme } from '../../../ui/theme'
 
 const FormBlock = ({intl}: any) => {
   return (
     <HeroForm>
-      <Box height='40px' />
+      <Box height={40} />
       <Text
         size={theme.fontSize.ml}
         color={theme.colors.white}
@@ -19,7 +19,7 @@ const FormBlock = ({intl}: any) => {
         {intl.formatMessage(messages.hero.formTitle)}
       </Text>
       <Form />
-      <Box height='30px' />
+      <Box height={40} />
     </HeroForm>
   )
 }
