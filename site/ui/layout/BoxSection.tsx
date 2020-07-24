@@ -1,7 +1,8 @@
+//todo: delete this file
+
 import styled from '@emotion/styled'
 import { alignItems, display, justifyContent, maxWidth } from 'styled-system'
 import { switchProp } from 'styled-tools'
-
 
 
 export const BoxSection = styled.div(

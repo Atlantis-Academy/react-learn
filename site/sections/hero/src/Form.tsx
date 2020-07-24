@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { BorderInput, FormStyle, InputForm, InputText, InputTextBox } from '../../../ui/hero/FormStyle'
 import { injectIntl } from 'react-intl'
-import { Button } from '../../../ui/NewButton'
 import messages from './Messages'
 import { Box } from '../../../ui/layout/NewBox'
 import { Text } from '../../../ui/text/Text'
 import { theme } from '../../../ui/theme'
+import { Button } from '../../../ui/hero/Button'
 
 
 const Form = ({intl}: any) => {
@@ -104,11 +104,13 @@ const Form = ({intl}: any) => {
       </BorderInput>
       <Box height='20px' />
       <Button
-        px={110}
-        py={15}
         border={'none'}
         bg={theme.colors.whiteBlue}
-      >{intl.formatMessage(messages.hero.formButton)}</Button>
+      >
+        <Text themeText={'buttonText'}>
+          {intl.formatMessage(messages.hero.formButton)}
+        </Text>
+      </Button>
     </FormStyle>
 
   )

@@ -1,14 +1,26 @@
+//todo: delete this file
+
 import styled from '@emotion/styled'
 import {
   alignItems,
-  background, backgroundImage, backgroundPosition, backgroundRepeat, backgroundSize,
+  background,
+  backgroundImage,
+  backgroundPosition,
+  backgroundRepeat,
+  backgroundSize,
   border,
   borderRadius,
   display,
-  height, justifyContent,
+  height,
+  justifyContent,
   left,
-  margin, maxWidth,
-  position, textAlign, top, width, zIndex
+  margin,
+  maxWidth,
+  position,
+  textAlign,
+  top,
+  width,
+  zIndex
 } from 'styled-system'
 
 

@@ -15,11 +15,6 @@ export const theme = {
   lineHeight,
   border,
   breakpoints: ['375px', '768px', '1440px'],
-  mediaQueries: {
-    s: `@media screen and (min-width: '375px')`,
-    m: `@media screen and (min-width: '768px')`,
-    l: `@media screen and (min-width: '1439px')`,
-  }
 }
 
 injectGlobal`

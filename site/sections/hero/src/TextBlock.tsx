@@ -13,7 +13,7 @@ import { Column } from '../../../ui/layout/NewLayout'
 
 const TextBlock = ({intl}: any) => {
   return (
-    <Column width={600}>
+    <Column flexBasis={600}>
       <TitleH1>
         <Title />
       </TitleH1>

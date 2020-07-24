@@ -7,6 +7,7 @@ import messages from '../hero/src/Messages'
 import { theme } from '../../ui/theme'
 import { Box } from '../../ui/layout/NewBox'
 import { Row } from '../../ui/layout/NewLayout'
+import { Text } from '../../ui/text/Text'
 
 
 const HeaderStyle = styled.header(() => ({
@@ -27,11 +28,11 @@ const Header = ({intl}: any) => {
         <Logo />
         <Button
           bg={'transparent'}
-          py={10}
-          px={30}
           border={`${theme.border.s} ${theme.colors.white}`}
         >
-          {intl.formatMessage(messages.headerButton)}
+          <Text themeText={'buttonText'}>
+            {intl.formatMessage(messages.headerButton)}
+          </Text>
         </Button>
       </Row>
     </HeaderStyle>

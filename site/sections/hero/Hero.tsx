@@ -18,7 +18,7 @@ const HeroSection = () => {
       >
         <TextBlock />
         <Column
-          width={600}
+          flexBasis={600}
           height={672}
         >
           <BoxForm>

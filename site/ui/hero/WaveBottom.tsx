@@ -4,5 +4,5 @@ import { WaveTop } from './WaveTop'
 
 export const WaveBottom = styled(WaveTop)(()=>({
   backgroundSize: '285px 197px',
-  backgroundPosition: '11% 76%',
+  backgroundPosition: '34px 360px',
 }))
